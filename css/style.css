@@ -136,6 +136,7 @@ nav ul li a:hover{
     .texto-portada__subtitle{
         width: 500px;
     }
+}
 
 
 /* ---- Main Home ---- */
@@ -395,7 +396,7 @@ footer{
     justify-content: space-evenly;
     /* height: 200px; */
     /* padding-top: 40px; */
-} 
+
 
 /* .flex-footer-column{
     display: flex;
