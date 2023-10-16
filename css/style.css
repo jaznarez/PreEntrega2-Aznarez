@@ -68,8 +68,7 @@ nav ul li a:hover {
     color: black;
 }
 
-.container {
-    /* width: 1200px;  */
+.container {  
     margin: 0 auto;
 }
 
@@ -78,13 +77,15 @@ nav ul li a:hover {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    
     }
 
     .nav-list {
         flex-direction: row;
         gap: 1rem;
+        font-size: 0.8rem;
     }
-}
+} 
 
 
 
@@ -257,20 +258,12 @@ nav ul li a:hover {
         text-align: center;
         padding-bottom: 15rem;
     }
+
+    
 }
 
 
 /* ---- Main Home ---- */
-
-/* h2{
-    margin-top: 100px;
-    padding-top: 60px;
-    padding-bottom: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    font-weight:bold;
-    text-align: center;
-} */
 
 .flex_home {
     padding: 1rem;
