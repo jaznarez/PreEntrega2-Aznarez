@@ -270,6 +270,47 @@ nav ul li a:hover {
     padding-right: 4rem;
 }
 
+.portada-shop{
+    background-image: url(../img/shop8.png);
+    height: 35vh;
+    background-position:center;
+    background-size: cover;
+    opacity: 0.6;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.portada-shop h2{
+    font-size: 2.2rem;
+    color: white;
+    font-weight: bold;
+    text-align:left;
+    padding-bottom: 10rem;
+    padding-left: 2rem;
+    margin-bottom: 0rem;
+}
+
+.portada-shop-create{
+    background-image: url(../img/startcreating.png);
+    height: 35vh;
+    background-position:center;
+    background-size: cover;
+    opacity: 0.6;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.portada-shop-create a{
+    font-size: 2.2rem;
+    color: white;
+    font-weight: bold;
+    text-align:center;
+    padding-left: 2.5rem;
+    padding-top: 10rem;
+    margin-bottom: 0rem;
+}
 
 
 
@@ -615,8 +656,8 @@ nav ul li a:hover {
         font-size: 0.9rem;
     }
 }
-/* ---- About Me Tarjetas Clientes y Form ---- */
 
+/* ---- About Me Tarjetas Clientes y Form ---- */
 
 .contactme{
     display: flex;
@@ -666,7 +707,15 @@ nav ul li a:hover {
     
 }
 
+/* ---- Shop Tarjetas ---- */
 
+.tarjetas-shop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding:1rem;
+}
 
 /* ---- Footer ---- */
 
