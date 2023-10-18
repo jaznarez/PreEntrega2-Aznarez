@@ -28,7 +28,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 nav ul li a:hover {
@@ -46,13 +45,16 @@ nav ul li a:hover {
     border: 2px solid white;
 }
 
-.flex-marca img {
+/* .flex-marca img {
+    height: 40px;
+} */
+
+.navbar-brand img{
     height: 40px;
 }
 
 .marca {
     font-size: 0.7rem;
-
 }
 
 .nav-list {
@@ -70,6 +72,18 @@ nav ul li a:hover {
 
 .container {  
     margin: 0 auto;
+    
+}
+
+.navbar-brand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-link{
+    font-size: 0.6rem;
+    line-height: 0.1rem;
 }
 
 @media(min-width: 480px) {
@@ -87,6 +101,29 @@ nav ul li a:hover {
     }
 } 
 
+@media(min-width: 768px){
+    .nav-link{
+        font-size: 0.8rem;
+        line-height: 0.2rem;
+    }
+}
+
+@media(min-width: 1200px){
+    .nav-list{
+        font-size: 1rem;
+        gap: 10rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .navbar-nav{
+        font-size: 1rem;
+        gap: 10rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
 
 
 /* ---- Main ---- */
@@ -97,7 +134,6 @@ nav ul li a:hover {
     min-height: 18vh;
     background-position: center;
     background-size: cover;
-    /* background-size: cover; */
     opacity: 0.6;
     display: flex;
     justify-content: center;
@@ -113,37 +149,33 @@ nav ul li a:hover {
 }
 
 .texto-portada__title {
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 0.4rem;
     color: white;
     font-weight: bold;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.1rem;
     padding-top: 2rem;
-
 }
 
 .texto-portada__subtitle {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     color: white;
     font-weight: bold;
-    width: 150px;
+    width: 180px;
     text-align: center;
     line-height: 2.5rem;
-
 }
 
 /* ----Portada Creations ---- */
 
 .portada-creations {
     background-image: url(../img/ajedrez8.png);
-    height: 240px;
+    height: 35vh;
     background-position: center;
     background-size: cover;
-    /* background-size: cover; */
     opacity: 0.6;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:start;
 }
 
 .portada-creations h2{
@@ -151,23 +183,22 @@ nav ul li a:hover {
     color: white;
     font-weight: bold;
     text-align:center;
-    padding-bottom: 0rem;
-    line-height: 2.5rem;
+    padding-top: 1rem;  
+    margin-bottom: 0rem;
 }
 
 .portada-creations p{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-align: center;
-    padding-bottom: 8rem;
-    /* padding-bottom: 16rem; */
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
 }
 
 .portada-creations-sculptures {
     background-image: url(../img/soldados.png);
-    height: 240px;
+    height: 35vh;
     background-position:center;
     background-size: cover;
-    /* background-size: cover; */
     opacity: 0.6;
     display: flex;
     justify-content: center;
@@ -179,30 +210,54 @@ nav ul li a:hover {
     color: white;
     font-weight: bold;
     text-align:center;
+    padding-top: 1rem;
     padding-bottom: 0rem;
-    line-height: 2.5rem;
+    margin-bottom: 0rem;
 }
 
 .portada-creations-sculptures p{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-align: center;
     padding-bottom: 8rem;
 }
 .tarjeta-creations h3 {
     font-size: 1rem;
-    padding-top: 0.1rem;
-    padding-bottom: 0.5rem;
+    margin-bottom:0rem;
+    padding-top: 0.5rem;
+    
 }
+
+.tarjeta-creations p {
+    font-size: 0.7rem;
+    margin-bottom:0rem;
+    
+}
+
 .tarjeta-sculptures h3 {
     font-size: 1rem;
-    padding-top: 0.1rem;
-    padding-bottom: 0.5rem;
+    margin-bottom:0rem;
+    padding-top: 0.5rem;
+}
+
+.tarjeta-sculptures p {
+    font-size: 0.7rem;
+    margin-bottom:0rem;
 }
 
 
 @media(min-width: 480px) {
     .portada-index {
         min-height: 25vh;
+    }
+
+    .texto-portada__title {
+        font-size: 0.6rem;
+    }
+
+    .texto-portada__subtitle{
+        font-size: 2.8rem;
+        line-height: 3rem;
+        width: 200px;
     }
 
     .portada-creations{
@@ -236,11 +291,14 @@ nav ul li a:hover {
     }
     .portada-creations h2{
         font-size: 4.5rem;
-        padding-top: 1rem;
+        padding-top: 2.2rem;
     }
 
     .portada-creations p{
-        padding-bottom: 18rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        padding-right: 10rem;
+        padding-left:10rem;
     }
 
     .portada-creations-sculptures{
@@ -251,17 +309,50 @@ nav ul li a:hover {
     .portada-creations-sculptures h2{
         font-size: 4.5rem;
         padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     .portada-creations-sculptures p{
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         text-align: center;
-        padding-bottom: 15rem;
+        
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        padding-bottom: 20rem;
+        padding-right: 10rem;
+        padding-left:10rem;
+    }   
+}
+
+@media(min-width: 1200px) {
+    .portada-index {
+        min-height: 80vh;
+    }
+
+    .texto-portada__subtitle {
+        width: 400px;
+        font-size: 5rem;
+        padding-top: 1rem;
+        line-height: 5.5rem;
+    }
+
+    .texto-portada__title {
+        font-size: 1.2rem;
     }
 
     
-}
+    .portada-creations p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        text-align: center;
+        
+    }
 
+    
+    .portada-creations-sculptures p{
+        font-size: 1.2rem;
+    }
+}
 
 /* ---- Main Home ---- */
 
@@ -271,11 +362,8 @@ nav ul li a:hover {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;   
 }
-
-
 
 
 /* ---- Targetas Imagen Portada ---- */
@@ -284,16 +372,6 @@ nav ul li a:hover {
     border: 2px solid white;
     padding: 1rem;
     gap: 2rem;
-}
-
-.tarjeta-imagen img {
-
-    /* padding: 10px 10px 10px 10px; */
-}
-
-.tarjeta-imagen .tarjeta-body {
-    /* width: 80%;
-    padding:10px 10px 10px 10px; */
 }
 
 .tarjeta-body {
@@ -310,9 +388,6 @@ nav ul li a:hover {
     font-size: 12px;
 }
 
-.tarjeta-body h3 {
-    /* padding-bottom: 10px; */
-}
 
 @media(min-width: 768px) {
     .flex_home {
@@ -321,25 +396,25 @@ nav ul li a:hover {
         align-items: stretch;
         justify-content: center;
         min-height: 80vh;
-        margin: 0 auto;
-        
+        margin: 0 auto;   
     }
 
     .tarjeta-body {
         text-align: center;
     }
 
-    .tarjeta-imagen img {
-        /* height: 200px; */
-    }
-
     .tarjeta-imagen {
         display: flex;
         flex-direction: column;
-
     }
-    
-    .tarjeta-sculptures img{
+
+}
+
+@media(min-width: 1200px){
+    .flex_home{
+        padding-left: 8rem;
+        padding-right: 8rem;
+        column-gap: 1rem;
         
     }
 }
@@ -350,10 +425,6 @@ nav ul li a:hover {
     background-color: rgb(238, 235, 235);
     padding: 2rem;
     gap: 1rem;
-    /* height: 750px; */
-    /* display:fex;
-    flex-direction: column;
-    gap: 1rem; */
 }
 
 .projects-responsive {
@@ -363,12 +434,6 @@ nav ul li a:hover {
 }
 
 .portada-projects h2 {
-    /* margin-top: 100px;
-    padding-top: 60px;
-    padding-bottom: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    font-weight:bold; */
     text-align: center;
     padding: 1rem;
 
@@ -400,14 +465,6 @@ nav ul li a:hover {
         margin: 0 auto;
         padding-left: 2rem;
         padding-right: 2rem;
-
-    }
-
-    .tarjeta-proyecto img {
-        /* height: 250px; */
-        /* align-self: center;
-        justify-self: center; */
-
     }
 
     .tarjeta-body-proyecto p {
@@ -417,6 +474,23 @@ nav ul li a:hover {
         padding-bottom: 0.8rem;
     }
 }
+
+@media(min-width:1200px) {
+    
+    .portada-projects{
+        height: 100vh;
+    }
+    .projects-responsive {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    
+    .portada-projects h2{
+        padding: 2rem;
+    }
+}
+
 
 /* ---- Targetas Exhibitions Portada ---- */
 
@@ -430,53 +504,25 @@ nav ul li a:hover {
 }
 
 .portada-exhibitions h2 {
-    /* text-align: left;
-    padding-left: 100px;
-    border: 2px solid white;
-    padding-top: 0px;
-    margin-top: 100px;
-    padding-top: 60px;
-    padding-bottom: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    font-weight:bold;
-    margin-top:0px; */
     text-align: center;
     padding: 1rem;
 }
 
-.flex-exhibitions-column img {
-    /* height: 20vh;  */
-}
-
 .flex-exhibitions-column h3 {
-    /* font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    padding-top: 20px; */
     font-size: 1rem;
     padding-top: 0.7rem;
 }
 
 .flex-exhibitions-column h4 {
-    /* font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    padding-top: 5px; */
     font-size: 0.7rem;
 
 }
 
 .flex-exhibitions-column h5 {
-    /* font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px; */
     font-size: 0.7rem;
 }
 
 .flex-exhibitions-column p {
-    /* font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    padding-top: 5px;
-    text-align: justify; */
     font-size: 0.7rem;
     text-align: justify;
     padding-top: 0.5rem;
@@ -500,13 +546,54 @@ nav ul li a:hover {
     }
 }
 
+@media(min-width:1200px){
+    .exhibitions-responsive{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        /* grid-template-columns: 1fr 1fr; */
+        padding-left: 8rem;
+        padding-right: 8rem;
+
+    }
+
+    .portada-exhibitions{
+        height: 140vh;
+    }
+
+    .flex-exhibitions-column img{
+        width: 35%;
+    }
+    .flex-exhibitions-column{
+        display:flex;
+    }
+
+    .exhibitions-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5rem;
+    }
+
+    .exhibitions-text h3{
+        font-size: 1.2rem;
+    }
+
+    .exhibitions-text h4{
+        font-size: 0.9rem;
+    }
+
+    .exhibitions-text h5{
+        font-size: 0.9rem;
+    }
+}
+
 /* ---- Footer ---- */
 
 footer {
     background-color: rgb(238, 235, 235);
     color: gray;
     padding: 1rem;
-    /* height: 200px; */
 }
 
 .footer-wrapper {
@@ -516,7 +603,11 @@ footer {
     gap: 1.4rem;
 }
 
-.footer-wrapper h5,
+.footer-wrapper h5 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
 .footer-wrapper a {
     text-align: center
 }
@@ -524,31 +615,30 @@ footer {
 .footer-redes ul li a {
     color: gray;
     font-size: 0.8rem;
+    
 }
 
 .footer-redes ul li a i {
     font-size: 1.2rem;
 }
 
-.footer-contact ul li {
-    font-size: 0.8rem;
+
+.footer-contact ,
+.footer-index  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: gray;
-    text-align: center;
 }
 
-.footer-contact ul li a{
+.footer-index a{
+    font-size: 0.8rem;
     color: gray;
 }
 
-.footer-index ul li{
-    font-size: 0.8rem;
+.footer-contact a{
     color: gray;
-    text-align: center;
-}
-
-.footer-index ul li a{
     font-size: 0.8rem;
-    color: gray;
 }
 
 @media(min-width: 480px){
@@ -557,8 +647,15 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 3rem;
         align-items: start;
-        padding-top: 2rem;
-        
+        padding-top: 2rem; 
+    }
+
+    .footer-index{
+        align-items: center;
+    }
+
+    .footer-contact{
+        align-items: center;
     }
 
     .footer-redes {

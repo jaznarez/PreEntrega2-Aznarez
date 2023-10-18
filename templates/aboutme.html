@@ -16,21 +16,38 @@
 
 
 <body>
-    <header>
-        <div class="flex-marca">
-            <img src="../img/horse.jpg" alt="" height="" />
-            <div class="marca">D.art</div>
-        </div>
+    <header class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/img/horse.jpg" alt="Logo" class="" height="">
+                <div class="marca">D.art</div>
+            </a>
 
-        <nav>
-            <ul class="nav-list">
-                <li><a href="/index.html" class="active">Home</a></li>
-                <li><a href="creations.html">Creations</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="creations.html">Creations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html" class="active">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -109,18 +126,18 @@
 
             <div class="footer-index">
                 <h5>About</h5>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./templates/aboutme.html">About me</a></li>
-                </ul>
+
+                <a href="./index.html">Home</a>
+                <a href="./templates/aboutme.html">About me</a>
+
             </div>
 
             <div class="footer-contact">
                 <h5>Contact</h5>
-                <ul>
-                    <li><a href="./templates/shop.html">Shop</a></li>
-                    <li><a href="./templates/aboutme.html">Message</a></li>
-                </ul>
+
+                <a href="./templates/shop.html">Shop</a>
+                <a href="./templates/aboutme.html">Message</a>
+
             </div>
 
             <div class="footer-redes">
