@@ -717,6 +717,14 @@ nav ul li a:hover {
     padding:1rem;
 }
 
+.card-title{
+    font-size: 1rem;
+}
+
+.card-text{
+    font-size: 0.8rem;
+}
+
 /* ---- Footer ---- */
 
 footer {
