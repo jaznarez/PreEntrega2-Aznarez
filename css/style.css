@@ -129,7 +129,7 @@ nav ul li a:hover {
     background-image: url(../img/ajedrez3.png);
     min-height: 35vh;
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     opacity: 0.6;
     display: flex;
     justify-content: center;
@@ -240,6 +240,8 @@ nav ul li a:hover {
     margin-bottom:0rem;
 }
 
+/* ---- Portada About Me ----*/
+
 .portada-aboutme{
     height: 35vh;
     background-color:rgb(238, 235, 235);
@@ -265,6 +267,8 @@ nav ul li a:hover {
     padding-left: 4rem;
     padding-right: 4rem;
 }
+
+/* ---- Portada Shop ---- */
 
 .portada-shop{
     background-image: url(../img/shop8.png);
@@ -436,7 +440,7 @@ nav ul li a:hover {
     font-size: 2.2rem;
     color: black;
     text-align:left;
-    padding-bottom: 2rem;
+    padding-bottom: 1.2rem;
     padding-left: 0rem;
     margin-bottom: 0rem;
 }
@@ -444,6 +448,7 @@ nav ul li a:hover {
 .form-login{
     gap:1rem;
     padding:6rem;
+    padding-bottom: 12rem;
 
 }
 
@@ -513,7 +518,7 @@ nav ul li a:hover {
     }
 }
 
-/* ---- Targetas Proyectos Portada ---- */
+/* ---- Targetas Proyectos ---- */
 
 .portada-projects {
     background-color: rgb(238, 235, 235);
@@ -586,7 +591,7 @@ nav ul li a:hover {
 }
 
 
-/* ---- Tarjetas Exhibitions Portada ---- */
+/* ---- Tarjetas Exhibitions ---- */
 
 .portada-exhibitions {
     background-color: white;
