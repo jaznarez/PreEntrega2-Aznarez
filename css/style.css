@@ -127,7 +127,7 @@ nav ul li a:hover {
 
 .portada-index {
     background-image: url(../img/ajedrez3.png);
-    min-height: 18vh;
+    min-height: 35vh;
     background-position: center;
     background-size: cover;
     opacity: 0.6;
@@ -443,6 +443,7 @@ nav ul li a:hover {
 
 .form-login{
     gap:1rem;
+    padding:6rem;
 
 }
 
