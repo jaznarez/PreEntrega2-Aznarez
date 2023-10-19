@@ -45,10 +45,6 @@ nav ul li a:hover {
     border: 2px solid white;
 }
 
-/* .flex-marca img {
-    height: 40px;
-} */
-
 .navbar-brand img{
     height: 40px;
 }
@@ -417,11 +413,39 @@ nav ul li a:hover {
         
     }
 
-    
     .portada-creations-sculptures p{
         font-size: 1.2rem;
     }
 }
+
+/* ---- Portada Login --- */
+
+.container-login{
+    background-image: url(../img/soldados.png);
+    height: 85vh;
+    background-position:center;
+    background-size: cover;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.container-login h3{
+    font-size: 2.2rem;
+    color: black;
+    text-align:left;
+    padding-bottom: 2rem;
+    padding-left: 0rem;
+    margin-bottom: 0rem;
+}
+
+.form-login{
+    gap:1rem;
+
+}
+
 
 /* ---- Main Home ---- */
 
