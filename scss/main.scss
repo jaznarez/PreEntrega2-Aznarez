@@ -1,20 +1,87 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    ;
+@import"./base";
+
+@import"./components/nav";
+@import"./components/card";
+@import"./components/footer";
+
+@import"./pages/aboutme";
+@import"./pages/creations";
+@import"./pages/index";
+@import"./pages/login";
+@import"./pages/shop";
+
+
+/* ---- Targetas Proyectos ---- */
+
+.portada-projects {
+    background-color: rgb(238, 235, 235);
+    padding: 2rem;
+    gap: 1rem;
 }
 
-ul,
-ol {
-    list-style: none;
+.projects-responsive {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-a {
-    text-decoration: none;
+.portada-projects h2 {
+    text-align: center;
+    padding: 1rem;
+
 }
 
-img {
-    max-width: 100%;
+.tarjeta-body-proyecto h3 {
+    font-size: 1.2rem;
+    padding-top: 0.7rem;
 }
+
+.tarjeta-body-proyecto h4 {
+    font-size: 0.7rem;
+}
+
+.tarjeta-body-proyecto p {
+    font-size: 0.7rem;
+    text-align: justify;
+    padding-top: 0.5rem;
+    padding-bottom: 0.8rem;
+}
+
+
+@media(min-width:768px) {
+    .projects-responsive {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .tarjeta-body-proyecto p {
+        font-size: 0.7rem;
+        text-align: justify;
+        padding-top: 0.5rem;
+        padding-bottom: 0.8rem;
+    }
+}
+
+@media(min-width:1200px) {
+    
+    .portada-projects{
+        height: 100vh;
+    }
+    .projects-responsive {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    
+    .portada-projects h2{
+        padding: 2rem;
+    }
+}
+
+
+

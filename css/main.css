@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.portada {
+  background-image: url(../img/ajedrez3.png);
+  min-height: 35vh;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portada__texto {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portada__texto__titulo {
+  font-size: 0.4rem;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 0.1rem;
+  padding-top: 2rem;
+}
+.portada__texto__subtitulo {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  width: 180px;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+/* ---- Targetas Imagen Portada ---- */
+.portada__tarjetas {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .portada__tarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: stretch;
+    justify-content: center;
+    min-height: 80vh;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  .portada__tarjetas {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+  }
+}
+.portada__tarjetas__imagen {
+  border: 2px solid white;
+  padding: 1rem;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .portada__tarjetas__imagen {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.portada__tarjetas__imagen__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 2rem;
+  gap: 0.5rem;
+}
+@media (min-width: 768px) {
+  .portada__tarjetas__imagen__body {
+    text-align: center;
+  }
+}
+.portada__tarjetas__imagen__body__texto {
+  font-size: 12px;
+}
+
+/* ---- Targetas Proyectos ---- */
+.portada-projects {
+  background-color: rgb(238, 235, 235);
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.projects-responsive {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.portada-projects h2 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.tarjeta-body-proyecto h3 {
+  font-size: 1.2rem;
+  padding-top: 0.7rem;
+}
+
+.tarjeta-body-proyecto h4 {
+  font-size: 0.7rem;
+}
+
+.tarjeta-body-proyecto p {
+  font-size: 0.7rem;
+  text-align: justify;
+  padding-top: 0.5rem;
+  padding-bottom: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .projects-responsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .tarjeta-body-proyecto p {
+    font-size: 0.7rem;
+    text-align: justify;
+    padding-top: 0.5rem;
+    padding-bottom: 0.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  .portada-projects {
+    height: 100vh;
+  }
+  .projects-responsive {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .portada-projects h2 {
+    padding: 2rem;
+  }
+}/*# sourceMappingURL=main.css.map */
