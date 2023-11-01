@@ -1,5 +1,5 @@
 .portada {
-  background-image: url(../img/ajedrez3.png);
+  background-image: url(../img/ajedrez2.jpg);
   min-height: 35vh;
   background-position: center;
   background-size: cover;
@@ -7,6 +7,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 480px) {
+  .portada {
+    min-height: 45vh;
+  }
+}
+@media (min-width: 768px) {
+  .portada {
+    min-height: 60vh;
+  }
+}
+@media (min-width: 1024px) {
+  .portada {
+    min-height: 85vh;
+  }
 }
 .portada__texto {
   padding: 1rem;
@@ -22,6 +37,21 @@
   padding-bottom: 0.1rem;
   padding-top: 2rem;
 }
+@media (min-width: 480px) {
+  .portada__texto__titulo {
+    font-size: 0.6rem;
+  }
+}
+@media (min-width: 768px) {
+  .portada__texto__titulo {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  .portada__texto__titulo {
+    font-size: 1.2rem;
+  }
+}
 .portada__texto__subtitulo {
   font-size: 2.5rem;
   color: white;
@@ -30,9 +60,32 @@
   text-align: center;
   line-height: 2.5rem;
 }
+@media (min-width: 480px) {
+  .portada__texto__subtitulo {
+    font-size: 2.8rem;
+    line-height: 3rem;
+    width: 200px;
+  }
+}
+@media (min-width: 768px) {
+  .portada__texto__subtitulo {
+    width: 300px;
+    font-size: 3.5rem;
+    padding-top: 1rem;
+    line-height: 4.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .portada__texto__subtitulo {
+    width: 400px;
+    font-size: 5rem;
+    padding-top: 1rem;
+    line-height: 5.5rem;
+  }
+}
 
 /* ---- Targetas Imagen Portada ---- */
-.portada__tarjetas {
+.portada-tarjetas {
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -41,7 +94,7 @@
   justify-content: center;
 }
 @media (min-width: 768px) {
-  .portada__tarjetas {
+  .portada-tarjetas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: stretch;
@@ -51,25 +104,31 @@
   }
 }
 @media (min-width: 1024px) {
-  .portada__tarjetas {
+  .portada-tarjetas {
     padding-left: 8rem;
     padding-right: 8rem;
     -moz-column-gap: 1rem;
          column-gap: 1rem;
   }
 }
-.portada__tarjetas__imagen {
+.portada-tarjetas__imagen {
   border: 2px solid white;
   padding: 1rem;
   gap: 2rem;
 }
 @media (min-width: 768px) {
-  .portada__tarjetas__imagen {
+  .portada-tarjetas__imagen {
     display: flex;
     flex-direction: column;
   }
 }
-.portada__tarjetas__imagen__body {
+@media (min-width: 1024px) {
+  .portada-tarjetas__imagen {
+    height: 217px;
+    width: 210px;
+  }
+}
+.portada-tarjetas__body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,39 +138,169 @@
   gap: 0.5rem;
 }
 @media (min-width: 768px) {
-  .portada__tarjetas__imagen__body {
+  .portada-tarjetas__body {
     text-align: center;
   }
 }
-.portada__tarjetas__imagen__body__texto {
+.portada-tarjetas__texto {
   font-size: 12px;
 }
 
-/* ---- Proyectos ---- */
+/* ---- Projects ---- */
 .portada-projects {
   background-color: rgb(238, 235, 235);
   padding: 2rem;
   gap: 1rem;
+}
+@media (min-width: 1024px) {
+  .portada-projects {
+    height: 100vh;
+  }
 }
 .portada-projects__responsive {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.portada-projects__h2 {
+@media (min-width: 768px) {
+  .portada-projects__responsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .portada-projects__responsive {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+.portada-projects__titulo {
   text-align: center;
   padding: 1rem;
 }
-.portada-projects__body__h3 {
+@media (min-width: 1024px) {
+  .portada-projects__titulo {
+    padding: 2rem;
+  }
+}
+.portada-projects__subtitulo {
   font-size: 1.2rem;
   padding-top: 0.7rem;
 }
-.portada-projects__body__h4 {
+.portada-projects__fecha {
   font-size: 0.7rem;
 }
-.portada-projects__body__p {
+.portada-projects__texto {
   font-size: 0.7rem;
   text-align: justify;
   padding-top: 0.5rem;
   padding-bottom: 0.8rem;
+}
+@media (min-width: 768px) {
+  .portada-projects__texto {
+    font-size: 0.7rem;
+    text-align: justify;
+    padding-top: 0.5rem;
+    padding-bottom: 0.8rem;
+  }
+}
+
+/* ---- Exhibitions ---- */
+.portada-exhibitions {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  .portada-exhibitions {
+    min-height: 45vh;
+  }
+}
+@media (min-width: 1024px) {
+  .portada-exhibitions {
+    height: 140vh;
+  }
+}
+@media (min-width: 768px) {
+  .portada-exhibitions__responsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    justify-content: center;
+    margin: 0 auto;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .portada-exhibitions__responsive {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+.portada-exhibitions__titulo {
+  text-align: center;
+  padding: 1rem;
+}
+.portada-exhibitions__subtitulo {
+  font-size: 1rem;
+  padding-top: 0.7rem;
+}
+.portada-exhibitions__fecha {
+  font-size: 0.7rem;
+}
+.portada-exhibitions__ubicacion {
+  font-size: 0.7rem;
+}
+.portada-exhibitions__text {
+  font-size: 0.7rem;
+  text-align: justify;
+  padding-top: 0.5rem;
+  padding-bottom: 0.8rem;
+}
+@media (min-width: 1024px) {
+  .portada-exhibitions__tarjetas {
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  .portada-exhibitions__tarjetas__img {
+    width: 35%;
+  }
+}
+@media (min-width: 1024px) {
+  .portada-exhibitions__tarjetas__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .portada-exhibitions__tarjetas__body__h3 {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .portada-exhibitions__tarjetas__body__h4 {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1024px) {
+  .portada-exhibitions__tarjetas__body__h5 {
+    font-size: 0.9rem;
+  }
 }/*# sourceMappingURL=index.css.map */

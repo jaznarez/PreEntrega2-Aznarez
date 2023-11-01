@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encontrá obras únicas o crealas tu mismo.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    
     <title>Home</title>
 </head>
 
@@ -19,10 +21,10 @@
 <body>
 
     <header class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./img/horse.jpg" alt="Logo" class="" height="">
-                <div class="marca">D.art</div>
+        <div class="navbar__container">
+            <a class="navbar__brand" href="#">
+                <img class="navbar__img" src="./img/horse.jpg" alt="Logo" class="" height="">
+                <div class="navbar__marca">D.art</div>
             </a>
 
 
@@ -72,54 +74,53 @@
     <main>
         <section class="portada">
             <div class="portada__texto">
-                <h2 class="portada__texto_titulo">CERAMIC</h2>
+                <h2 class="portada__texto__titulo">CERAMIC</h2>
                 <p class="portada__texto__subtitulo">Sculpture your passion</p>
             </div>
         </section>
 
-        <section class="portada__tarjetas">
-            <article class="portada__tarjetas__imagen">
-                <img src="./img/uniquepieces.png" height="" width="">
-                <div class="portada__tarjetas__imagen__body">
+        <section class="portada-tarjetas">
+            <article class="portada-tarjetas__imagen">
+                <img src="./img/uniquepieces.png" height="" width="" loading="lazy">
+                <div class="portada-tarjetas__body">
                     <h3>Unique Pieces</h3>
-                    <p class="portada__tarjetas__imagen__body__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea est suscipit tempore
+                    <p class="portada-tarjetas__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea est suscipit tempore
                         ipsam architecto, commodi illo saepe eius et aliquam delectus autem, unde soluta. Quis
                         aspernatur eos enim! Sapiente, adipisci?</p>
                 </div>
             </article>
 
-            <article class="tarjeta-imagen">
+            <article class="portada-tarjetas__imagen">
                 <img src="./img/handmadeart.png" height="" width="">
-                <div class="tarjeta-body">
+                <div class="portada-tarjetas__body">
                     <h3>Handmade Art</h3>
-                    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea est suscipit tempore
+                    <p class="portada-tarjetas__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea est suscipit tempore
                         ipsam architecto, commodi illo saepe eius et aliquam delectus autem, unde soluta. Quis
                         aspernatur eos enim! Sapiente, adipisci?</p>
                 </div>
             </article>
 
-            <article class="tarjeta-imagen">
+            <article class="portada-tarjetas__imagen">
                 <img src="./img/create.png" height="" width="">
-                <div class="tarjeta-body">
+                <div class="portada-tarjetas__body">
                     <h3>Create what you imagine</h3>
-                    <p class="parrafo">Lorem ipsum dolor sit amet</p>
+                    <p class="portada-tarjetas__texto">Lorem ipsum dolor sit amet</p>
                 </div>
             </article>
         </section>
 
         <section class="portada-projects">
-            <h2>Latest Projects</h2>
+            <h2 class="portada-projects__titulo">Latest Projects</h2>
             <article class="portada-projects__responsive">
-                <!-- <article class="flex-projects"> -->
 
                 <div class="portada-projects__tarjetas">
 
                     <img src="./img/ballena.png" opacity=0.6 height="" width="" />
 
                     <div class="portada-projects__body">
-                        <h3>Green Whale</h3>
-                        <h4>July, 2023</h4>
-                        <p>This personalized project succeed in expressesing the strong relation between sea and
+                        <h3 class="portada-projects__subtitulo">Green Whale</h3>
+                        <h4 class="portada-projects__fecha">July, 2023</h4>
+                        <p class="portada-projects__texto">This personalized project succeed in expressesing the strong relation between sea and
                             ground species. </p>
                     </div>
                 </div>
@@ -129,23 +130,20 @@
                         <img src="./img/fenix.png" height="" width="" />
                     </div>
                     <div class="portada-projects__body">
-                        <h3>Phoenix</h3>
-                        <h4>June, 2023</h4>
-                        <p>The inmortal bird, part of Greek mythology. This sculpture was a personal order.</p>
+                        <h3 class="portada-projects__subtitulo">Phoenix</h3>
+                        <h4 class="portada-projects__fecha">June, 2023</h4>
+                        <p class="portada-projects__texto">The inmortal bird, part of Greek mythology. This sculpture was a personal order.</p>
                     </div>
                 </div>
-
-                <!-- </article> -->
-                <!-- <article class="flex-projects"> -->
 
                 <div class="portada-projects__tarjetas">
 
                     <img src="./img/torofacetado1.png" opacity=0.6 height="" width="" />
 
                     <div class="portada-projects__body">
-                        <h3>Faceted Bull</h3>
-                        <h4>November, 2022</h4>
-                        <p>Representing strenght and prosperity, this bull started as a personal project and today
+                        <h3 class="portada-projects__subtitulo">Faceted Bull</h3>
+                        <h4 class="portada-projects__fecha">November, 2022</h4>
+                        <p class="portada-projects__texto">Representing strenght and prosperity, this bull started as a personal project and today
                             is a huge sucess.</p>
                     </div>
                 </div>
@@ -155,27 +153,25 @@
                         <img src="./img/ajedrez4.png" height="" width="" />
                     </div>
                     <div class="portada-projects__tarjetas">
-                        <h3>Chess</h3>
-                        <h4>Febrary, 2023</h4>
-                        <p>Personalized with unique pieces, this board game turns even more interesting. </p>
+                        <h3 class="portada-projects__subtitulo">Chess</h3>
+                        <h4 class="portada-projects__fecha">Febrary, 2023</h4>
+                        <p class="portada-projects__texto">Personalized with unique pieces, this board game turns even more interesting. </p>
                     </div>
                 </div>
-
-                <!-- </article> -->
             </article>
         </section>
 
         <section class="portada-exhibitions">
-            <h2>Exhibitions</h2>
-            <!-- Exhibitions llevaría una lista desplegable -->
-            <article class=exhibitions-responsive>
-                <article class="flex-exhibitions-column">
+            <h2 class="portada-exhibitions__titulo">Exhibitions</h2>
+            
+            <article class=portada-exhibitions__responsive>
+                <article class="portada-exhibitions__tarjetas">
                     <img src="./img/expo2.png" alt="" />
-                    <div class="exhibitions-text">
-                        <h3>"Artistas Emergentes" Exhibition</h3>
-                        <h4>July, 2022</h4>
-                        <h5>Sevilla, España</h5>
-                        <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit blanditiis
+                    <div class="portada-exhibitions__body">
+                        <h3 class="portada-exhibitions__subtitulo">"Artistas Emergentes" Exhibition</h3>
+                        <h4 class="portada-exhibitions__fecha" >July, 2022</h4>
+                        <h5 class="portada-exhibitions__ubicacion">Sevilla, España</h5>
+                        <p class="portada-exhibitions__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit blanditiis
                             porro
                             repellendus animi quibusdam nesciunt, recusandae deserunt esse ipsa. Nam labore numquam odit
                             iusto
@@ -183,13 +179,13 @@
                     </div>
                 </article>
 
-                <article class="flex-exhibitions-column">
+                <article class="portada-exhibitions__tarjetas">
                     <img src="./img/expo1.png" alt="" />
-                    <div class="exhibitions-text">
-                        <h3>Plastic Arts Salon Exhibition</h3>
-                        <h4>September, 2022</h4>
-                        <h5>Montevideo, Uruguay</h5>
-                        <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit blanditiis
+                    <div class="portada-exhibitions__body">
+                        <h3 class="portada-exhibitions__subtitulo">Plastic Arts Salon Exhibition</h3>
+                        <h4 class="portada-exhibitions__fecha" >September, 2022</h4>
+                        <h5 class="portada-exhibitions__ubicacion">Montevideo, Uruguay</h5>
+                        <p class="portada-exhibitions__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit blanditiis
                             porro
                             repellendus animi quibusdam nesciunt, recusandae deserunt esse ipsa. Nam labore numquam odit
                             iusto
