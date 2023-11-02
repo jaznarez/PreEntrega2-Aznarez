@@ -138,8 +138,7 @@ $color-blanco: white;
         }
 
         @include mq-desktop(){
-            height: 217px;
-            width: 210px;
+            
         }
     }
 
@@ -232,6 +231,7 @@ $color-blanco: white;
             padding-bottom: 0.8rem;
         }
     }
+
 }
 
 
@@ -266,11 +266,7 @@ $color-blanco: white;
         }
 
         @include mq-desktop() {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            padding-left: 8rem;
-            padding-right: 8rem;
+            
         }
     }
 
@@ -282,14 +278,26 @@ $color-blanco: white;
     &__subtitulo {
         font-size: 1rem;
         padding-top: 0.7rem;
+
+        @include mq-desktop {
+            font-size: 1.2rem;
+        }
     }
 
     &__fecha {
         font-size: 0.7rem;
+
+        @include mq-desktop {
+            font-size: 0.9rem;
+        }
     }
 
     &__ubicacion{
         font-size: 0.7rem;
+
+        @include mq-desktop {
+            font-size: 0.9rem;
+        }
     }
 
     &__text{
@@ -302,7 +310,6 @@ $color-blanco: white;
     &__tarjetas {
 
         @include mq-desktop() {
-            display: flex;
         }
 
         &__img {
@@ -310,32 +317,15 @@ $color-blanco: white;
                 width: 35%;
             }
         }
+    }
 
-        &__body {
-            @include mq-desktop() {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding: 5rem;
-            }
-
-            &__h3 {
-                @include mq-desktop {
-                    font-size: 1.2rem;
-                }
-            }
-
-            &__h4 {
-                @include mq-desktop {
-                    font-size: 0.9rem;
-                }
-            }
-
-            &__h5 {
-                @include mq-desktop {
-                    font-size: 0.9rem;
-                }
-            }
+    &__body {
+        @include mq-desktop() {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem;
         }
+        
     }
 }
