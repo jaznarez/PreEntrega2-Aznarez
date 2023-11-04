@@ -67,6 +67,7 @@ $sombra-tarjetas: 10px 10px 4px gray;
 
             @include mq-tablet(){
                 font-size: 0.8rem;
+                padding-top: 0rem;
             }
 
             @include mq-desktop(){
@@ -74,7 +75,7 @@ $sombra-tarjetas: 10px 10px 4px gray;
             }
         }
 
-        &__subtitulo {
+        &__subtitulo1 {
             font-size: 2.5rem;
             color: white;
             font-weight: bold;
@@ -93,7 +94,67 @@ $sombra-tarjetas: 10px 10px 4px gray;
                 width: 300px;
                 font-size: 3.5rem;
                 padding-top: 1rem;
-                line-height: 4.5rem;
+                line-height: 3rem;
+            }
+
+            @include mq-desktop(){
+                width: 400px;
+                font-size: 5rem;
+                padding-top: 1rem;
+                line-height: 5.5rem;
+            }
+        }
+
+        &__subtitulo2 {
+            font-size: 2.5rem;
+            color: white;
+            font-weight: bold;
+            width: 180px;
+            text-align: center;
+            line-height: 2.5rem;
+            text-shadow: $sombra-titulo;
+
+            @include mq-mobile(){
+                font-size: 2.8rem;
+                line-height: 3rem;
+                width: 200px;
+            }
+
+            @include mq-tablet(){
+                width: 300px;
+                font-size: 3.5rem;
+                padding-top: 1rem;
+                line-height: 3rem;
+            }
+
+            @include mq-desktop(){
+                width: 400px;
+                font-size: 5rem;
+                padding-top: 1rem;
+                line-height: 5.5rem;
+            }
+        }
+
+        &__subtitulo3 {
+            font-size: 2.5rem;
+            color: white;
+            font-weight: bold;
+            width: 180px;
+            text-align: center;
+            line-height: 2.5rem;
+            text-shadow: $sombra-titulo;
+
+            @include mq-mobile(){
+                font-size: 2.8rem;
+                line-height: 3rem;
+                width: 200px;
+            }
+
+            @include mq-tablet(){
+                width: 300px;
+                font-size: 3.5rem;
+                padding-top: 1rem;
+                line-height: 3rem;
             }
 
             @include mq-desktop(){
@@ -323,9 +384,7 @@ $sombra-tarjetas: 10px 10px 4px gray;
         }
 
         &__img {
-            @include mq-desktop() {
-                width: 35%;
-            }
+            height: 505px;
         }
     }
 
