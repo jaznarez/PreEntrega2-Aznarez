@@ -36,6 +36,7 @@
   font-weight: bold;
   padding-bottom: 0.1rem;
   padding-top: 2rem;
+  text-shadow: 5px 5px 5px black;
 }
 @media (min-width: 480px) {
   .portada__texto__titulo {
@@ -59,6 +60,7 @@
   width: 180px;
   text-align: center;
   line-height: 2.5rem;
+  text-shadow: 5px 5px 5px black;
 }
 @media (min-width: 480px) {
   .portada__texto__subtitulo {
@@ -134,6 +136,12 @@
 @media (min-width: 768px) {
   .portada-tarjetas__body {
     text-align: center;
+    padding-top: 0rem;
+  }
+}
+@media (min-width: 1024px) {
+  .portada-tarjetas__body {
+    padding-top: 0rem;
   }
 }
 .portada-tarjetas__texto {
