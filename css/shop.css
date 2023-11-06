@@ -1,5 +1,5 @@
 .shop-ready {
-  background-image: url(../img/shop8.png);
+  background-image: url(../img/shop8-comp.png);
   height: 35vh;
   background-position: center;
   background-size: cover;
@@ -112,7 +112,7 @@
 }
 
 .shop-create {
-  background-image: url(../img/startcreating.png);
+  background-image: url(../img/startcreating-comp.png);
   height: 35vh;
   background-position: center;
   background-size: cover;

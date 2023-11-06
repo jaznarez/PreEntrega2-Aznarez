@@ -467,7 +467,7 @@ header .active {
 }
 
 .creaciones-esculturas {
-  background-image: url(../img/soldados.png);
+  background-image: url(../img/soldados-comp.png);
   height: 35vh;
   background-position: center;
   background-size: cover;
@@ -580,7 +580,7 @@ header .active {
 }
 
 .portada {
-  background-image: url(../img/ajedrez2.jpg);
+  background-image: url(../img/ajedrez2-comp.jpg);
   min-height: 35vh;
   background-position: center;
   background-size: cover;
@@ -939,7 +939,7 @@ header .active {
 
 /* ---- Login --- */
 .login-container {
-  background-image: url(../img/soldados.png);
+  background-image: url(../img/soldados-comp.png);
   height: 85vh;
   background-position: center;
   background-size: cover;
@@ -967,7 +967,7 @@ header .active {
 }
 
 .shop-ready {
-  background-image: url(../img/shop8.png);
+  background-image: url(../img/shop8-comp.png);
   height: 35vh;
   background-position: center;
   background-size: cover;
@@ -1080,7 +1080,7 @@ header .active {
 }
 
 .shop-create {
-  background-image: url(../img/startcreating.png);
+  background-image: url(../img/startcreating-comp.png);
   height: 35vh;
   background-position: center;
   background-size: cover;
