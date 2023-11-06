@@ -27,39 +27,65 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
-.navbar__container {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
-.navbar__brand {
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.navbar-brand img {
+  height: 42px;
+}
+@media (min-width: 1024px) {
+  .navbar-brand img {
+    height: 42px;
+    width: 40px;
+  }
+}
+
+.marca {
+  font-size: 0.7rem;
+}
+
+.nav-list a {
+  color: black;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.navbar-brand {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.navbar__img {
-  height: 40px;
-}
-.navbar__marca {
-  font-size: 0.7rem;
-  color: black;
-}
-.navbar .nav-link {
+
+.nav-link {
   font-size: 0.6rem;
   line-height: 0.1rem;
 }
 @media (min-width: 768px) {
-  .navbar .nav-link {
+  .nav-link {
     font-size: 0.8rem;
     line-height: 0.2rem;
   }
 }
+
 @media (min-width: 1024px) {
   .navbar-nav {
     font-size: 1rem;
-    gap: 10rem;
+    gap: 5rem;
     padding-left: 5rem;
     padding-right: 5rem;
   }
@@ -202,8 +228,8 @@ header {
 .aboutme__contactme {
   display: flex;
   flex-direction: column;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   gap: 3rem;
@@ -471,7 +497,7 @@ header {
   color: white;
   font-weight: bold;
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   padding-bottom: 0rem;
   margin-bottom: 0rem;
   text-shadow: 5px 5px 5px black;
