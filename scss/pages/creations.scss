@@ -60,20 +60,21 @@ $sombra-tarjetas:10px 10px 4px gray;
     p{
         font-size: 0.7rem;
         text-align: center;
-        padding-right: 0.5rem;
+        padding-right: 0rem;
         padding-left: 0.5rem;  
 
         @include mq-tablet{
             font-size: 1.2rem;
             line-height: 1.5rem;
-            padding-right: 10rem;
-            padding-left:10rem;
+           
         }
 
         @include mq-desktop(){
             font-size: 1.2rem;
             line-height: 2rem;
             text-align: center;
+            padding-left: 8rem;
+            padding-right:8rem;
         }
     }
 
@@ -162,6 +163,11 @@ $sombra-tarjetas:10px 10px 4px gray;
         margin-bottom: 0rem; 
         text-shadow: $sombra-titulo;
 
+        @include mq-mobile(){
+            padding-top: 1rem;
+            
+        }
+
         @include mq-tablet(){
             font-size: 4.5rem;
             padding-top: 1rem;
@@ -173,6 +179,11 @@ $sombra-tarjetas:10px 10px 4px gray;
         font-size: 0.7rem;
         text-align: center;
         padding-bottom: 8rem;
+
+        @include mq-mobile(){
+            padding-top: 1rem;
+            padding-bottom: 12rem;
+        }
 
         @include mq-tablet(){
             font-size: 1.2rem;
