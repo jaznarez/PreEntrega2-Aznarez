@@ -335,10 +335,6 @@ $sombra-tarjetas: 10px 10px 4px gray;
             padding-left: 2rem;
             padding-right: 2rem;
         }
-
-        @include mq-desktop() {
-            
-        }
     }
 
     &__titulo {
@@ -379,9 +375,6 @@ $sombra-tarjetas: 10px 10px 4px gray;
     }
 
     &__tarjetas {
-
-        @include mq-desktop() {
-        }
 
         & img {
             height: 505px;
