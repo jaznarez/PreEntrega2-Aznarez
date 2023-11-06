@@ -1,1 +1,28 @@
-/*# sourceMappingURL=login.css.map */
+/* ---- Login --- */
+.login-container {
+  background-image: url(../img/soldados.png);
+  height: 85vh;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-container h3 {
+  font-size: 2.2rem;
+  color: black;
+  text-align: left;
+  padding-bottom: 1.2rem;
+  padding-left: 0rem;
+  margin-bottom: 0rem;
+}
+.login-container__form {
+  gap: 1rem;
+  padding: 6rem;
+  padding-bottom: 12rem;
+}
+
+.row {
+  gap: 0.5rem;
+}/*# sourceMappingURL=login.css.map */
