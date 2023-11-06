@@ -58,6 +58,15 @@
 }
 .creaciones-chess__tarjetas {
   padding: 1rem;
+  gap: 1rem;
+}
+.creaciones-chess__tarjetas img {
+  height: 230px;
+  width: 250px;
+}
+.creaciones-chess__tarjetas img:hover {
+  height: 270px;
+  width: 290px;
   box-shadow: 10px 10px 4px gray;
 }
 .creaciones-chess__tarjetas h3 {
@@ -65,9 +74,18 @@
   margin-bottom: 0rem;
   padding-top: 0.5rem;
 }
+.creaciones-chess__tarjetas h3:hover {
+  text-shadow: 5px 5px 5px black;
+}
 .creaciones-chess__tarjetas p {
   font-size: 0.7rem;
   margin-bottom: 0rem;
+}
+.creaciones-chess__responsive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .creaciones-chess__responsive {
@@ -76,8 +94,8 @@
     align-items: stretch;
     justify-content: center;
     margin: 0 auto;
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
+    -moz-column-gap: 0rem;
+         column-gap: 0rem;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 1rem;
@@ -146,6 +164,14 @@
 }
 .creaciones-esculturas__tarjetas {
   padding: 1rem;
+}
+.creaciones-esculturas__tarjetas img {
+  height: 230px;
+  width: 250px;
+}
+.creaciones-esculturas__tarjetas img:hover {
+  height: 270px;
+  width: 290px;
   box-shadow: 10px 10px 4px gray;
 }
 .creaciones-esculturas__tarjetas h3 {
@@ -157,6 +183,12 @@
   font-size: 0.7rem;
   margin-bottom: 0rem;
 }
+.creaciones-esculturas__responsive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 @media (min-width: 768px) {
   .creaciones-esculturas__responsive {
     display: grid;
@@ -164,8 +196,8 @@
     align-items: stretch;
     justify-content: center;
     margin: 0 auto;
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
+    -moz-column-gap: 0rem;
+         column-gap: 0rem;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 1rem;
