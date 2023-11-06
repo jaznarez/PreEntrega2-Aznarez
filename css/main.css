@@ -34,61 +34,57 @@ header {
     align-items: center;
   }
 }
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-.active {
-  text-decoration: underline;
-}
-
-.navbar-brand img {
-  height: 42px;
-}
-@media (min-width: 1024px) {
-  .navbar-brand img {
-    height: 42px;
-    width: 40px;
-  }
-}
-
-.marca {
-  font-size: 0.7rem;
-}
-
-.nav-list a {
-  color: black;
-}
-
-.container {
+header .container {
   margin: 0 auto;
 }
-
-.navbar-brand {
+header .container .navbar-brand {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.nav-link {
-  font-size: 0.6rem;
-  line-height: 0.1rem;
+header .container .navbar-brand img {
+  height: 42px;
 }
-@media (min-width: 768px) {
-  .nav-link {
-    font-size: 0.8rem;
-    line-height: 0.2rem;
+@media (min-width: 1024px) {
+  header .container .navbar-brand img {
+    height: 42px;
+    width: 40px;
   }
 }
-
+header .container .navbar-brand .marca {
+  font-size: 0.7rem;
+}
+@media (min-width: 768px) {
+  header .container .navbar-nav {
+    font-size: 1rem;
+    gap: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
 @media (min-width: 1024px) {
-  .navbar-nav {
+  header .container .navbar-nav {
     font-size: 1rem;
     gap: 5rem;
     padding-left: 5rem;
     padding-right: 5rem;
   }
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+header nav ul li a {
+  font-size: 0.2rem;
+  line-height: 0.2rem;
+}
+@media (min-width: 768px) {
+  header nav ul li a {
+    font-size: 0.8rem;
+    line-height: 0.2rem;
+  }
+}
+header .active {
+  text-decoration: underline;
 }
 
 /* ---- Footer ---- */
@@ -929,7 +925,7 @@ nav ul li a:hover {
   padding-top: 0.5rem;
   padding-bottom: 0.8rem;
 }
-.portada-exhibitions__tarjetas__img {
+.portada-exhibitions__tarjetas img {
   height: 505px;
 }
 @media (min-width: 1024px) {

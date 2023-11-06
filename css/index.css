@@ -344,7 +344,7 @@
   padding-top: 0.5rem;
   padding-bottom: 0.8rem;
 }
-.portada-exhibitions__tarjetas__img {
+.portada-exhibitions__tarjetas img {
   height: 505px;
 }
 @media (min-width: 1024px) {

@@ -383,7 +383,7 @@ $sombra-tarjetas: 10px 10px 4px gray;
         @include mq-desktop() {
         }
 
-        &__img {
+        & img {
             height: 505px;
         }
     }

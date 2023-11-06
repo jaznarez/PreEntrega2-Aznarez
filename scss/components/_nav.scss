@@ -32,63 +32,68 @@ header {
         justify-content: space-between;
         align-items: center;
     }
-}
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
+    .container {  
+        margin: 0 auto;
 
-.active {
-    text-decoration: underline;
-}
+        .navbar-brand{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-
-.navbar-brand img{
-    height: 42px;
+            img{
+                height: 42px;
     
+                @include mq-desktop(){
+                    height: 42px;
+                    width: 40px;
+                }
+            }
+            .marca {
+                font-size: 0.7rem;
+            }
+        }   
+        
+        .navbar-nav{
+            @include mq-tablet(){
+                font-size: 1rem;
+                gap: 2rem;
+                padding-left: 5rem;
+                padding-right: 5rem;
+            }
 
-    @include mq-desktop(){
-        height: 42px;
-        width: 40px;
+            @include mq-desktop(){
+                font-size: 1rem;
+                gap: 5rem;
+                padding-left: 5rem;
+                padding-right: 5rem;
+            }
+        }
+        
+    }   
+    nav{
+        ul{
+            li{
+                a:hover{
+                    text-decoration: underline;
+                }
+                a{
+                    font-size: 0.2rem;
+                    line-height: 0.2rem;
+
+                    @include mq-tablet(){
+                        font-size: 0.8rem;
+                        line-height: 0.2rem;
+                    }
+                }
+            }
+        }
+    }
+    .active{
+        text-decoration: underline;
     }
 }
 
-.marca {
-    font-size: 0.7rem;
-}
 
 
-.nav-list a {
-    color: black;
-}
-
-.container {  
-    margin: 0 auto;
-    
-}
-
-.navbar-brand{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.nav-link{
-    font-size: 0.6rem;
-    line-height: 0.1rem;
-
-    @include mq-tablet(){
-        font-size: 0.8rem;
-        line-height: 0.2rem;
-    }
-}
-
-.navbar-nav{
-    @include mq-desktop(){
-        font-size: 1rem;
-        gap: 5rem;
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
-}
 
