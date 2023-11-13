@@ -2,7 +2,7 @@ $color-background: rgb(238, 235, 235);
 $color-blanco: white;
 
 $sombra-titulo: 5px 5px 5px black;
-$sombra-tarjetas: 10px 10px 4px gray;
+$sombra-tarjetas: 2px 2px 10px;
 
 @mixin mq-mobile{
     @media(min-width: 480px){
@@ -78,9 +78,11 @@ $sombra-tarjetas: 10px 10px 4px gray;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        padding:1rem;
+        padding:2rem;
+        
 
         .card{
+            box-shadow: $sombra-tarjetas;
 
             &-img-top{
                 height: 256px;
@@ -122,7 +124,7 @@ $sombra-tarjetas: 10px 10px 4px gray;
             column-gap: 1rem;
             padding-left: 2rem;
             padding-right: 2rem;
-            padding-top:1rem;
+            padding-top:2rem;
         }
 
         @include mq-desktop(){
@@ -134,7 +136,8 @@ $sombra-tarjetas: 10px 10px 4px gray;
             column-gap: 1rem;
             padding-left: 2rem;
             padding-right: 2rem;
-            padding-top:1rem;
+            padding-top:2rem;
+            padding-bottom: 3rem;
         }
 
         h5{
@@ -182,6 +185,11 @@ $sombra-tarjetas: 10px 10px 4px gray;
         padding-left:5.5rem;
         margin-bottom: 0rem;
         text-shadow: $sombra-titulo;
+
+        &:hover{
+            font-size: 5.5rem;
+            padding-left: 3rem;
+        }
 
         @include mq-mobile(){
             font-size: 3rem;
