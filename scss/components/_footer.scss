@@ -1,5 +1,6 @@
 /* ---- Footer ---- */
 
+
 .footer-wrapper {
     background-color: rgb(238, 235, 235);
     color: gray;
@@ -19,6 +20,11 @@
         text-align: center;
         color:gray;
         font-size: 0.8rem;
+
+        &:hover{
+            font-weight: bold;
+
+        }
         
     }
 

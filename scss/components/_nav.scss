@@ -55,6 +55,8 @@ header {
         }   
         
         .navbar-nav{
+
+            
             @include mq-tablet(){
                 font-size: 1rem;
                 gap: 2rem;
@@ -69,29 +71,20 @@ header {
                 padding-right: 5rem;
             }
         }
-        
-    }   
-    nav{
-        ul{
-            li{
-                a:hover{
-                    text-decoration: underline;
-                }
-                a{
-                    font-size: 0.2rem;
-                    line-height: 0.2rem;
 
-                    @include mq-tablet(){
-                        font-size: 0.8rem;
-                        line-height: 0.2rem;
-                    }
-                }
+        .nav-item{
+            &:hover{
+                text-decoration: underline;
+            }
+
+        .nav-link.active{
+                text-decoration: underline;
             }
         }
-    }
-    .active{
-        text-decoration: underline;
-    }
+        
+    }   
+    
+    
 }
 
 
