@@ -153,12 +153,13 @@
 
 /* ---- Targetas Imagen Portada ---- */
 .portada-tarjetas {
-  padding: 1rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
   justify-content: center;
+  padding-top: 2.5rem;
 }
 @media (min-width: 768px) {
   .portada-tarjetas {
@@ -172,16 +173,33 @@
 }
 @media (min-width: 1024px) {
   .portada-tarjetas {
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     -moz-column-gap: 1rem;
          column-gap: 1rem;
   }
 }
 .portada-tarjetas__imagen {
-  border: 2px solid white;
+  border: none;
   padding: 1rem;
   gap: 2rem;
+  overflow: hidden;
+  border-radius: 5px;
+  padding-bottom: 1rem;
+}
+.portada-tarjetas__imagen:hover {
+  transform: scale(1.1);
+}
+.portada-tarjetas__imagen img {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.portada-tarjetas__imagen img:hover {
+  transform: scale(1.1);
 }
 @media (min-width: 768px) {
   .portada-tarjetas__imagen {
@@ -219,11 +237,6 @@
   padding: 2rem;
   gap: 1rem;
 }
-@media (min-width: 1024px) {
-  .portada-projects {
-    height: 100vh;
-  }
-}
 .portada-projects__responsive {
   display: flex;
   flex-direction: column;
@@ -233,7 +246,6 @@
   .portada-projects__responsive {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
     justify-content: center;
     margin: 0 auto;
     padding-left: 2rem;
@@ -242,9 +254,20 @@
 }
 @media (min-width: 1024px) {
   .portada-projects__responsive {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2.5rem;
+  }
+}
+.portada-projects img {
+  border-radius: 5px;
+}
+@media (min-width: 1024px) {
+  .portada-projects__body {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 .portada-projects__titulo {
@@ -285,6 +308,7 @@
   flex-direction: column;
   gap: 1rem;
   padding: 2rem;
+  padding-top: 2.5rem;
 }
 @media (min-width: 768px) {
   .portada-exhibitions {
@@ -296,62 +320,103 @@
     height: 140vh;
   }
 }
+.portada-exhibitions__responsive {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+@media (min-width: 480px) {
+  .portada-exhibitions__responsive {
+    gap: 4rem;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 4rem;
+  }
+}
 @media (min-width: 768px) {
   .portada-exhibitions__responsive {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: stretch;
+    align-items: baseline;
     justify-content: center;
     margin: 0 auto;
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+    padding-top: 1.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 2.5rem;
   }
+}
+@media (min-width: 1024px) {
+  .portada-exhibitions__responsive {
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+  }
+}
+.portada-exhibitions .card {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  border-color: white;
+}
+.portada-exhibitions .card:hover {
+  transform: scale(1.1);
+}
+.portada-exhibitions .card img {
+  border-color: white;
+}
+.portada-exhibitions__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.portada-exhibitions__cards:hover {
+  transform: scale(1.1);
 }
 .portada-exhibitions__titulo {
   text-align: center;
   padding: 1rem;
 }
-.portada-exhibitions__subtitulo {
-  font-size: 1rem;
-  padding-top: 0.7rem;
-}
 @media (min-width: 1024px) {
-  .portada-exhibitions__subtitulo {
-    font-size: 1.2rem;
-  }
-}
-.portada-exhibitions__fecha {
-  font-size: 0.7rem;
-}
-@media (min-width: 1024px) {
-  .portada-exhibitions__fecha {
-    font-size: 0.9rem;
-  }
-}
-.portada-exhibitions__ubicacion {
-  font-size: 0.7rem;
-}
-@media (min-width: 1024px) {
-  .portada-exhibitions__ubicacion {
-    font-size: 0.9rem;
+  .portada-exhibitions__titulo {
+    padding: 2rem;
   }
 }
 .portada-exhibitions__text {
   font-size: 0.7rem;
   text-align: justify;
-  padding-top: 0.5rem;
-  padding-bottom: 0.8rem;
+  padding-top: 1rem;
+  padding-bottom: 1.8rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
-.portada-exhibitions__tarjetas img {
-  height: 505px;
+@media (min-width: 1024px) {
+  .portada-exhibitions__text {
+    padding-top: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .portada-exhibitions__tarjetas img {
+    height: 446px;
+  }
 }
 @media (min-width: 1024px) {
   .portada-exhibitions__body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem;
+    padding: 1rem;
   }
 }/*# sourceMappingURL=index.css.map */

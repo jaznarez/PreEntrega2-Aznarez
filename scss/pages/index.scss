@@ -3,10 +3,10 @@ $color-blanco: white;
 
 $sombra-titulo: 5px 5px 5px black;
 $sombra-parrafo: 2px 2px 2px black;
-$sombra-tarjetas:2px 2px 10px;
+$sombra-tarjetas: 2px 2px 10px;
 
-@mixin mq-mobile{
-    @media(min-width: 480px){
+@mixin mq-mobile {
+    @media(min-width: 480px) {
         @content
     }
 }
@@ -35,15 +35,15 @@ $sombra-tarjetas:2px 2px 10px;
     justify-content: center;
     align-items: center;
 
-    @include mq-mobile(){
+    @include mq-mobile() {
         min-height: 45vh;
     }
 
-    @include mq-tablet(){
+    @include mq-tablet() {
         min-height: 60vh;
     }
 
-    @include mq-desktop(){
+    @include mq-desktop() {
         min-height: 85vh;
     }
 
@@ -62,16 +62,16 @@ $sombra-tarjetas:2px 2px 10px;
             padding-top: 2rem;
             text-shadow: $sombra-titulo;
 
-            @include mq-mobile(){
+            @include mq-mobile() {
                 font-size: 0.6rem;
             }
 
-            @include mq-tablet(){
+            @include mq-tablet() {
                 font-size: 0.8rem;
                 padding-top: 0rem;
             }
 
-            @include mq-desktop(){
+            @include mq-desktop() {
                 font-size: 1.2rem;
             }
         }
@@ -85,20 +85,20 @@ $sombra-tarjetas:2px 2px 10px;
             line-height: 2.5rem;
             text-shadow: $sombra-titulo;
 
-            @include mq-mobile(){
+            @include mq-mobile() {
                 font-size: 2.8rem;
                 line-height: 3rem;
                 width: 200px;
             }
 
-            @include mq-tablet(){
+            @include mq-tablet() {
                 width: 300px;
                 font-size: 3.5rem;
                 padding-top: 1rem;
                 line-height: 3rem;
             }
 
-            @include mq-desktop(){
+            @include mq-desktop() {
                 width: 400px;
                 font-size: 5rem;
                 padding-top: 1rem;
@@ -115,20 +115,20 @@ $sombra-tarjetas:2px 2px 10px;
             line-height: 2.5rem;
             text-shadow: $sombra-titulo;
 
-            @include mq-mobile(){
+            @include mq-mobile() {
                 font-size: 2.8rem;
                 line-height: 3rem;
                 width: 200px;
             }
 
-            @include mq-tablet(){
+            @include mq-tablet() {
                 width: 300px;
                 font-size: 3.5rem;
                 padding-top: 1rem;
                 line-height: 3rem;
             }
 
-            @include mq-desktop(){
+            @include mq-desktop() {
                 width: 400px;
                 font-size: 5rem;
                 padding-top: 1rem;
@@ -145,20 +145,20 @@ $sombra-tarjetas:2px 2px 10px;
             line-height: 2.5rem;
             text-shadow: $sombra-titulo;
 
-            @include mq-mobile(){
+            @include mq-mobile() {
                 font-size: 2.8rem;
                 line-height: 3rem;
                 width: 200px;
             }
 
-            @include mq-tablet(){
+            @include mq-tablet() {
                 width: 300px;
                 font-size: 3.5rem;
                 padding-top: 1rem;
                 line-height: 3rem;
             }
 
-            @include mq-desktop(){
+            @include mq-desktop() {
                 width: 400px;
                 font-size: 5rem;
                 padding-top: 1rem;
@@ -172,12 +172,13 @@ $sombra-tarjetas:2px 2px 10px;
 /* ---- Targetas Imagen Portada ---- */
 
 .portada-tarjetas {
-    padding: 1rem;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
     justify-content: center;
+    padding-top: 2.5rem;
 
     @include mq-tablet() {
         display: grid;
@@ -189,25 +190,42 @@ $sombra-tarjetas:2px 2px 10px;
     }
 
     @include mq-desktop() {
-        padding-left: 8rem;
-        padding-right: 8rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         column-gap: 1rem;
     }
 
     &__imagen {
-        border: 2px solid white;
+        border: none;
         padding: 1rem;
         gap: 2rem;
-        
+        overflow: hidden;
+        border-radius: 5px;
+        padding-bottom: 1rem;
+
+        &:hover {
+            transform: scale(1.1);
+
+        }
+
+        & img {
+            width: 100%;
+            height: 100%;
+            transition: 0.8s;
+            object-fit: cover;
+            border-radius: 5px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
 
         @include mq-tablet() {
             display: flex;
             flex-direction: column;
         }
 
-        @include mq-desktop(){
-            
-        }
+        @include mq-desktop() {}
     }
 
     &__body {
@@ -224,7 +242,7 @@ $sombra-tarjetas:2px 2px 10px;
             padding-top: 0rem;
         }
 
-        @include mq-desktop(){
+        @include mq-desktop() {
             padding-top: 0rem;
         }
     }
@@ -242,22 +260,16 @@ $sombra-tarjetas:2px 2px 10px;
     padding: 2rem;
     gap: 1rem;
 
-    @include mq-desktop() {
-        height: 100vh;
-    }
-
+    @include mq-desktop() {}
 
     &__responsive {
         display: flex;
         flex-direction: column;
         gap: 1rem;
 
-        
-
         @include mq-tablet() {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            align-items: center;
             justify-content: center;
             margin: 0 auto;
             padding-left: 2rem;
@@ -265,9 +277,23 @@ $sombra-tarjetas:2px 2px 10px;
         }
 
         @include mq-desktop() {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            padding-left: 8rem;
-            padding-right: 8rem;
+            column-gap: 3rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 2.5rem;
+        }
+    }
+
+    & img {
+        border-radius: 5px;
+    } 
+
+
+    &__body {
+        
+        @include mq-desktop() {
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
     }
 
@@ -279,7 +305,6 @@ $sombra-tarjetas:2px 2px 10px;
             padding: 2rem;
         }
     }
-
 
     &__subtitulo {
         font-size: 1.2rem;
@@ -317,6 +342,7 @@ $sombra-tarjetas:2px 2px 10px;
     flex-direction: column;
     gap: 1rem;
     padding: 2rem;
+    padding-top: 2.5rem;
 
     @include mq-tablet() {
         min-height: 45vh;
@@ -327,59 +353,106 @@ $sombra-tarjetas:2px 2px 10px;
     }
 
     &__responsive {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+
+        @include mq-mobile() {
+            gap: 4rem;
+            padding-top: 2rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
+            padding-bottom: 4rem;
+        }
+
         @include mq-tablet() {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            align-items: stretch;
+            align-items:baseline;
             justify-content: center;
             margin: 0 auto;
-            column-gap: 1rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
+            column-gap: 3rem;
+            padding-top: 1.5rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+            padding-bottom: 2.5rem;
+            
+
+        }
+
+        @include mq-desktop() {
+            column-gap: 4rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+            padding-top: 2rem;
+        }
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        object-fit: cover;
+        border-radius: 5px;
+        border-color: white;
+
+        &:hover {
+            transform: scale(1.1)
+        }
+
+        & img {
+            border-color: white;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &:hover {
+            transform: scale(1.1)
         }
     }
 
     &__titulo {
         text-align: center;
         padding: 1rem;
-    }
 
-    &__subtitulo {
-        font-size: 1rem;
-        padding-top: 0.7rem;
-
-        @include mq-desktop {
-            font-size: 1.2rem;
+        @include mq-desktop() {
+            padding: 2rem;
         }
     }
 
-    &__fecha {
-        font-size: 0.7rem;
 
-        @include mq-desktop {
-            font-size: 0.9rem;
-        }
-    }
-
-    &__ubicacion{
-        font-size: 0.7rem;
-
-        @include mq-desktop {
-            font-size: 0.9rem;
-        }
-    }
-
-    &__text{
+    &__text {
         font-size: 0.7rem;
         text-align: justify;
-        padding-top: 0.5rem;
-        padding-bottom: 0.8rem;
+        padding-top: 1rem;
+        padding-bottom: 1.8rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+
+        @include mq-desktop(){
+            padding-top: 1.5rem;
+        }
+
     }
 
     &__tarjetas {
-
         & img {
-            height: 505px;
+
+            @include mq-mobile() {}
+
+            @include mq-tablet() {}
+
+            @include mq-desktop() {
+                height: 446px;
+            }
         }
     }
 
@@ -388,8 +461,7 @@ $sombra-tarjetas:2px 2px 10px;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 2rem;
+            padding: 1rem;
         }
-        
     }
 }
