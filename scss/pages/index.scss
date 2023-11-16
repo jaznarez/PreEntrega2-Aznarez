@@ -200,7 +200,7 @@ $sombra-tarjetas: 2px 2px 10px;
         padding: 1rem;
         gap: 2rem;
         overflow: hidden;
-        border-radius: 5px;
+        border-radius: 10px;
         padding-bottom: 1rem;
 
         &:hover {
@@ -213,7 +213,7 @@ $sombra-tarjetas: 2px 2px 10px;
             height: 100%;
             transition: 0.8s;
             object-fit: cover;
-            border-radius: 5px;
+            border-radius: 10px;
 
             &:hover {
                 transform: scale(1.1);
@@ -268,26 +268,68 @@ $sombra-tarjetas: 2px 2px 10px;
         gap: 1rem;
 
         @include mq-tablet() {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            /*display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             justify-content: center;
             margin: 0 auto;
             padding-left: 2rem;
             padding-right: 2rem;
+            height: 800px;
+            width: 600px;*/
+            flex-direction: row;
+            width: 600;
+            height: 530px;
+            padding-bottom: 4rem;
+            overflow: hidden;
+            border-radius: 10px;
         }
 
         @include mq-desktop() {
-            column-gap: 3rem;
+            
             padding-left: 2rem;
             padding-right: 2rem;
-            padding-top: 2.5rem;
+            height: 650px;
+            overflow: hidden;
+            
+        }
+
+        & img{
+            border-radius: 10px;
+
+            @include mq-tablet(){
+                width: 0px;
+                flex-grow: 1;
+                object-fit: cover;
+                opacity: 0.8;
+                transition: 0.8s ease;
+                overflow: hidden;
+
+                &:hover{
+                    width: 300px;
+                    opacity: 1;
+                    transform: scale(1.05)
+                    
+                    
+                }
+
+            }
+
+            @include mq-desktop(){
+                width: 0px;
+                flex-grow: 1;
+                object-fit: cover;
+                opacity: 0.8;
+                transition: 0.8s ease;
+
+                &:hover{
+                    width: 300px;
+                    opacity: 1;
+                    transform: scale(1.05)
+                }
+
+            }
         }
     }
-
-    & img {
-        border-radius: 5px;
-    } 
-
 
     &__body {
         
