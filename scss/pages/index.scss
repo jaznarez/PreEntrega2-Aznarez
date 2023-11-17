@@ -258,6 +258,7 @@ $sombra-tarjetas: 2px 2px 10px;
 .portada-projects {
     background-color: $color-background;
     padding: 2rem;
+    padding-bottom:4rem;
     gap: 1rem;
 
     @include mq-desktop() {}
@@ -279,9 +280,11 @@ $sombra-tarjetas: 2px 2px 10px;
             flex-direction: row;
             width: 600;
             height: 530px;
-            padding-bottom: 4rem;
+            padding-bottom: 10rem;
+            padding-top: 3rem;
             overflow: hidden;
             border-radius: 10px;
+            position: relative;
         }
 
         @include mq-desktop() {
@@ -295,6 +298,11 @@ $sombra-tarjetas: 2px 2px 10px;
 
         & img{
             border-radius: 10px;
+            @include mq-desktop() {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        
 
             @include mq-tablet(){
                 width: 0px;
@@ -329,16 +337,10 @@ $sombra-tarjetas: 2px 2px 10px;
 
             }
         }
-    }
-
-    &__body {
         
-        @include mq-desktop() {
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
     }
 
+    
     &__titulo {
         text-align: center;
         padding: 1rem;
@@ -348,10 +350,10 @@ $sombra-tarjetas: 2px 2px 10px;
         }
     }
 
-    &__subtitulo {
+    /*&__subtitulo {
         font-size: 1.2rem;
         padding-top: 0.7rem;
-    }
+    }*/
 
 
     &__fecha {
@@ -370,6 +372,113 @@ $sombra-tarjetas: 2px 2px 10px;
             padding-top: 0.5rem;
             padding-bottom: 0.8rem;
         }
+    }
+
+    &__card{
+
+        @include mq-tablet(){
+            width: 600px;
+            height: 400px;
+            /*overflow:hidden;*/
+            position:relative;
+            border-radius: 10px;
+        }
+
+        @include mq-tablet(){
+            width: 0px;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: 0.8;
+            transition: 0.8s ease;
+            /*overflow: hidden;*/
+
+            &:hover{
+                width: 300px;
+                opacity: 1;
+                transform: scale(1.2);
+                border-radius: 10px;  
+                cursor: pointer; 
+            }
+        }
+
+        @include mq-desktop(){
+            width: 800px;
+            height: 600px;
+            width: 0px;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: 0.8;
+            transition: 0.8s ease;
+            border-radius: 10px;
+
+            &:hover{
+                width: 200px;
+                opacity: 1;
+                transform: scale(1.05);
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+
+        & img{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+
+            @include mq-desktop() {
+                
+            } 
+        }
+    
+
+    &__subtitulo{
+
+        @include mq-tablet(){
+            font-size: 1.5rem;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+
+            &:hover{
+                top:50%;
+                left:50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    &__fecha{
+        @include mq-tablet(){
+            font-size: 0.8rem;
+            color: white;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+        }
+
+    }
+
+    &__texto{
+        @include mq-tablet(){
+            font-size: 0.6rem;
+            color: white;
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+
+            &:hover{
+                font-size: 1rem;
+            }
+        }
+
     }
 
 }
@@ -439,7 +548,7 @@ $sombra-tarjetas: 2px 2px 10px;
         height: 100%;
         transition: 0.5s;
         object-fit: cover;
-        border-radius: 5px;
+        border-radius: 10px;
         border-color: white;
 
         &:hover {
@@ -448,7 +557,19 @@ $sombra-tarjetas: 2px 2px 10px;
 
         & img {
             border-color: white;
+            border-radius: 10px;
         }
+
+    }
+
+    .card-title{
+        top: 50%;
+        text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+    }
+
+    .card-text{
+        top: 70%;
+        text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
     }
 
     &__cards {
@@ -464,6 +585,7 @@ $sombra-tarjetas: 2px 2px 10px;
     &__titulo {
         text-align: center;
         padding: 1rem;
+        
 
         @include mq-desktop() {
             padding: 2rem;
@@ -477,7 +599,7 @@ $sombra-tarjetas: 2px 2px 10px;
         padding-top: 1rem;
         padding-bottom: 1.8rem;
         padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        padding-right: 0.5rem;  
 
         @include mq-desktop(){
             padding-top: 1.5rem;
