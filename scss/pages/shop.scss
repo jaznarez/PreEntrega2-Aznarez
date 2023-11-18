@@ -79,10 +79,16 @@ $sombra-tarjetas: 2px 2px 10px;
         align-items: center;
         gap: 1rem;
         padding:2rem;
+
+        @include mq-desktop(){
+            padding-left: 3rem;
+        }
         
 
         .card{
             box-shadow: $sombra-tarjetas;
+            border-radius: 10px;
+
 
             &-img-top{
                 height: 256px;
@@ -122,6 +128,7 @@ $sombra-tarjetas: 2px 2px 10px;
             justify-content: center;
             margin: 0 auto;
             column-gap: 1rem;
+            row-gap: 2rem;
             padding-left: 2rem;
             padding-right: 2rem;
             padding-top:2rem;
@@ -137,7 +144,7 @@ $sombra-tarjetas: 2px 2px 10px;
             padding-left: 2rem;
             padding-right: 2rem;
             padding-top:2rem;
-            padding-bottom: 3rem;
+            padding-bottom: 5rem;
         }
 
         h5{

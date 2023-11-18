@@ -224,6 +224,12 @@ header .container .nav-item .nav-link.active {
   gap: 3rem;
   font-size: 0.8rem;
 }
+@media (min-width: 1024px) {
+  .aboutme__contactme {
+    padding-left: 6rem;
+    padding: 6rem;
+  }
+}
 .aboutme__contactme h3 {
   font-size: 2.2rem;
   color: gray;
@@ -285,6 +291,12 @@ header .container .nav-item .nav-link.active {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
     padding-bottom: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .aboutme__responsive {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 .aboutme__tarjetas {
@@ -422,11 +434,16 @@ header .container .nav-item .nav-link.active {
   padding: 1rem;
   gap: 1rem;
 }
+@media (min-width: 1024px) {
+  .creaciones-chess__tarjetas {
+    padding-left: 2.5rem;
+  }
+}
 .creaciones-chess__tarjetas img {
   height: 230px;
   width: 250px;
   box-shadow: 2px 2px 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .creaciones-chess__tarjetas img:hover {
   height: 270px;
@@ -437,6 +454,7 @@ header .container .nav-item .nav-link.active {
   font-size: 1rem;
   margin-bottom: 0rem;
   padding-top: 0.5rem;
+  padding-left: 1rem;
 }
 .creaciones-chess__tarjetas h3:hover {
   text-shadow: 5px 5px 5px black;
@@ -444,12 +462,13 @@ header .container .nav-item .nav-link.active {
 .creaciones-chess__tarjetas p {
   font-size: 0.7rem;
   margin-bottom: 0rem;
+  padding-left: 1rem;
 }
 .creaciones-chess__responsive {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 @media (min-width: 768px) {
   .creaciones-chess__responsive {
@@ -542,11 +561,16 @@ header .container .nav-item .nav-link.active {
 .creaciones-esculturas__tarjetas {
   padding: 1rem;
 }
+@media (min-width: 1024px) {
+  .creaciones-esculturas__tarjetas {
+    padding-left: 2.5rem;
+  }
+}
 .creaciones-esculturas__tarjetas img {
   height: 230px;
   width: 250px;
   box-shadow: 2px 2px 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .creaciones-esculturas__tarjetas img:hover {
   height: 270px;
@@ -557,10 +581,12 @@ header .container .nav-item .nav-link.active {
   font-size: 1rem;
   margin-bottom: 0rem;
   padding-top: 0.5rem;
+  padding-left: 1rem;
 }
 .creaciones-esculturas__tarjetas p {
   font-size: 0.7rem;
   margin-bottom: 0rem;
+  padding-left: 1rem;
 }
 .creaciones-esculturas__responsive {
   display: flex;
@@ -990,7 +1016,7 @@ header .container .nav-item .nav-link.active {
 }
 .portada-projects__subtitulo {
   padding-top: 1rem;
-  padding-left: 1rem;
+  padding-left: 0rem;
 }
 @media (min-width: 768px) {
   .portada-projects__subtitulo {
@@ -1010,11 +1036,11 @@ header .container .nav-item .nav-link.active {
 }
 @media (min-width: 1024px) {
   .portada-projects__subtitulo {
-    top: 68%;
+    top: 60%;
   }
 }
 .portada-projects__fecha {
-  padding-left: 1rem;
+  padding-left: 0rem;
 }
 @media (min-width: 768px) {
   .portada-projects__fecha {
@@ -1029,12 +1055,12 @@ header .container .nav-item .nav-link.active {
 }
 @media (min-width: 1024px) {
   .portada-projects__fecha {
-    top: 71%;
+    top: 65%;
   }
 }
 .portada-projects__texto {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
 @media (min-width: 768px) {
   .portada-projects__texto {
@@ -1052,7 +1078,7 @@ header .container .nav-item .nav-link.active {
 }
 @media (min-width: 1024px) {
   .portada-projects__texto {
-    top: 80%;
+    top: 75%;
   }
 }
 
@@ -1270,8 +1296,14 @@ header .container .nav-item .nav-link.active {
   gap: 1rem;
   padding: 2rem;
 }
+@media (min-width: 1024px) {
+  .shop-ready__tarjetas {
+    padding-left: 3rem;
+  }
+}
 .shop-ready__tarjetas .card {
   box-shadow: 2px 2px 10px;
+  border-radius: 10px;
 }
 .shop-ready__tarjetas .card-img-top {
   height: 256px;
@@ -1304,6 +1336,7 @@ header .container .nav-item .nav-link.active {
     margin: 0 auto;
     -moz-column-gap: 1rem;
          column-gap: 1rem;
+    row-gap: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 2rem;
@@ -1321,7 +1354,7 @@ header .container .nav-item .nav-link.active {
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
   }
 }
 .shop-ready__tarjetas h5 {

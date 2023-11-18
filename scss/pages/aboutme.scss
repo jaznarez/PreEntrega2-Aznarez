@@ -108,6 +108,11 @@ $color-blanco: white;
         gap: 3rem;
         font-size: 0.8rem;
 
+        @include mq-desktop(){
+            padding-left: 6rem;
+            padding: 6rem;
+        }
+
         h3 {
             font-size: 2.2rem;
             color:gray;
@@ -149,7 +154,6 @@ $color-blanco: white;
         border-radius: 10px;
         padding: 1rem;
 
-
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -159,6 +163,7 @@ $color-blanco: white;
             display: grid;
             grid-template-columns: 0.5fr 1fr;
         }
+
     }
 
     &__responsive {
@@ -176,6 +181,12 @@ $color-blanco: white;
             margin: 0 auto;
             column-gap: 2rem;
             padding-bottom: 1rem;
+        }
+
+        @include mq-desktop(){
+            padding-left: 3rem;
+            padding-right: 3rem;
+    
         }
     }
 
@@ -224,8 +235,6 @@ $color-blanco: white;
 
         @include mq-tablet() {
             font-size: 1rem;
-
-
         }
     }
 }
@@ -259,4 +268,5 @@ $color-blanco: white;
     @include mq-tablet() {
         align-items: start;
     }
+
 }

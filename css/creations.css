@@ -62,11 +62,16 @@
   padding: 1rem;
   gap: 1rem;
 }
+@media (min-width: 1024px) {
+  .creaciones-chess__tarjetas {
+    padding-left: 2.5rem;
+  }
+}
 .creaciones-chess__tarjetas img {
   height: 230px;
   width: 250px;
   box-shadow: 2px 2px 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .creaciones-chess__tarjetas img:hover {
   height: 270px;
@@ -77,6 +82,7 @@
   font-size: 1rem;
   margin-bottom: 0rem;
   padding-top: 0.5rem;
+  padding-left: 1rem;
 }
 .creaciones-chess__tarjetas h3:hover {
   text-shadow: 5px 5px 5px black;
@@ -84,12 +90,13 @@
 .creaciones-chess__tarjetas p {
   font-size: 0.7rem;
   margin-bottom: 0rem;
+  padding-left: 1rem;
 }
 .creaciones-chess__responsive {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 @media (min-width: 768px) {
   .creaciones-chess__responsive {
@@ -182,11 +189,16 @@
 .creaciones-esculturas__tarjetas {
   padding: 1rem;
 }
+@media (min-width: 1024px) {
+  .creaciones-esculturas__tarjetas {
+    padding-left: 2.5rem;
+  }
+}
 .creaciones-esculturas__tarjetas img {
   height: 230px;
   width: 250px;
   box-shadow: 2px 2px 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .creaciones-esculturas__tarjetas img:hover {
   height: 270px;
@@ -197,10 +209,12 @@
   font-size: 1rem;
   margin-bottom: 0rem;
   padding-top: 0.5rem;
+  padding-left: 1rem;
 }
 .creaciones-esculturas__tarjetas p {
   font-size: 0.7rem;
   margin-bottom: 0rem;
+  padding-left: 1rem;
 }
 .creaciones-esculturas__responsive {
   display: flex;
