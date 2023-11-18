@@ -57,7 +57,7 @@ header .container .navbar-brand .marca {
 @media (min-width: 768px) {
   header .container .navbar-nav {
     font-size: 1rem;
-    gap: 2rem;
+    gap: 0rem;
     padding-left: 5rem;
     padding-right: 5rem;
   }
@@ -857,7 +857,8 @@ header .container .nav-item .nav-link.active {
     padding-left: 2rem;
     padding-right: 2rem;
     height: 650px;
-    overflow: hidden;
+    gap: 0rem;
+    /*overflow: hidden;*/
   }
 }
 .portada-projects__responsive img {
@@ -877,11 +878,12 @@ header .container .nav-item .nav-link.active {
        object-fit: cover;
     opacity: 0.8;
     transition: 0.8s ease;
-    overflow: hidden;
+    /*overflow: hidden;*/
   }
   .portada-projects__responsive img:hover {
     width: 300px;
     opacity: 1;
+    filter: contrast(120%);
     transform: scale(1.05);
   }
 }
@@ -893,6 +895,9 @@ header .container .nav-item .nav-link.active {
        object-fit: cover;
     opacity: 0.8;
     transition: 0.8s ease;
+    border-radius: 10px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   .portada-projects__responsive img:hover {
     width: 300px;
@@ -943,7 +948,7 @@ header .container .nav-item .nav-link.active {
        object-fit: cover;
     opacity: 0.8;
     transition: 0.8s ease;
-    /*overflow: hidden;*/
+    overflow: hidden;
   }
   .portada-projects__card:hover {
     width: 300px;
@@ -957,6 +962,7 @@ header .container .nav-item .nav-link.active {
   .portada-projects__card {
     width: 800px;
     height: 600px;
+    position: relative;
     width: 0px;
     flex-grow: 1;
     -o-object-fit: cover;
@@ -966,21 +972,29 @@ header .container .nav-item .nav-link.active {
     border-radius: 10px;
   }
   .portada-projects__card:hover {
-    width: 200px;
+    width: 400px;
     opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.2);
     border-radius: 10px;
     cursor: pointer;
   }
 }
 .portada-projects img {
   border-radius: 10px;
-  width: 100%;
-  height: 100%;
+}
+@media (min-width: 768px) {
+  .portada-projects img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.portada-projects__subtitulo {
+  padding-top: 1rem;
+  padding-left: 1rem;
 }
 @media (min-width: 768px) {
   .portada-projects__subtitulo {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: white;
     position: absolute;
     top: 50%;
@@ -994,6 +1008,14 @@ header .container .nav-item .nav-link.active {
     transform: translate(-50%, -50%);
   }
 }
+@media (min-width: 1024px) {
+  .portada-projects__subtitulo {
+    top: 68%;
+  }
+}
+.portada-projects__fecha {
+  padding-left: 1rem;
+}
 @media (min-width: 768px) {
   .portada-projects__fecha {
     font-size: 0.8rem;
@@ -1004,6 +1026,15 @@ header .container .nav-item .nav-link.active {
     transform: translate(-50%, -50%);
     text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
   }
+}
+@media (min-width: 1024px) {
+  .portada-projects__fecha {
+    top: 71%;
+  }
+}
+.portada-projects__texto {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 @media (min-width: 768px) {
   .portada-projects__texto {
@@ -1017,6 +1048,11 @@ header .container .nav-item .nav-link.active {
   }
   .portada-projects__texto:hover {
     font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .portada-projects__texto {
+    top: 80%;
   }
 }
 
