@@ -111,6 +111,8 @@ $color-blanco: white;
         @include mq-desktop(){
             padding-left: 6rem;
             padding: 6rem;
+            padding-left: 8.5rem;
+            padding-right:8.5rem;
         }
 
         h3 {

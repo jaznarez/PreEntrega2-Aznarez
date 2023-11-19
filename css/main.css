@@ -228,6 +228,8 @@ header .container .nav-item .nav-link.active {
   .aboutme__contactme {
     padding-left: 6rem;
     padding: 6rem;
+    padding-left: 8.5rem;
+    padding-right: 8.5rem;
   }
 }
 .aboutme__contactme h3 {
