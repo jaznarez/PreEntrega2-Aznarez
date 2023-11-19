@@ -64,7 +64,8 @@
 }
 @media (min-width: 1024px) {
   .creaciones-chess__tarjetas {
-    padding-left: 2.5rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
 .creaciones-chess__tarjetas img {
@@ -110,6 +111,11 @@
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .creaciones-chess__responsive {
+    padding-left: 10rem;
   }
 }
 
@@ -191,7 +197,8 @@
 }
 @media (min-width: 1024px) {
   .creaciones-esculturas__tarjetas {
-    padding-left: 2.5rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
 .creaciones-esculturas__tarjetas img {
@@ -234,5 +241,10 @@
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .creaciones-esculturas__responsive {
+    padding-left: 10rem;
   }
 }/*# sourceMappingURL=creations.css.map */
