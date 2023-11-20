@@ -445,13 +445,13 @@ header .container .nav-item .nav-link.active {
 .creaciones-chess__tarjetas img {
   height: 230px;
   width: 250px;
-  box-shadow: 2px 2px 10px;
+  box-shadow: 10px 10px 4px gray;
   border-radius: 10px;
 }
 .creaciones-chess__tarjetas img:hover {
   height: 270px;
   width: 290px;
-  box-shadow: 2px 2px 10px;
+  box-shadow: 10px 10px 4px gray;
 }
 .creaciones-chess__tarjetas h3 {
   font-size: 1rem;
@@ -578,13 +578,13 @@ header .container .nav-item .nav-link.active {
 .creaciones-esculturas__tarjetas img {
   height: 230px;
   width: 250px;
-  box-shadow: 2px 2px 10px;
+  box-shadow: 10px 10px 4px gray;
   border-radius: 10px;
 }
 .creaciones-esculturas__tarjetas img:hover {
   height: 270px;
   width: 290px;
-  box-shadow: 2px 2px 10px;
+  box-shadow: 10px 10px 4px gray;
 }
 .creaciones-esculturas__tarjetas h3 {
   font-size: 1rem;
@@ -937,23 +937,6 @@ header .container .nav-item .nav-link.active {
     padding: 2rem;
   }
 }
-.portada-projects__fecha {
-  font-size: 0.8rem;
-}
-.portada-projects__texto {
-  font-size: 0.8rem;
-  text-align: justify;
-  padding-top: 0.5rem;
-  padding-bottom: 0.8rem;
-}
-@media (min-width: 768px) {
-  .portada-projects__texto {
-    font-size: 0.7rem;
-    text-align: justify;
-    padding-top: 0.5rem;
-    padding-bottom: 0.8rem;
-  }
-}
 @media (min-width: 768px) {
   .portada-projects__card {
     width: 600px;
@@ -1046,6 +1029,7 @@ header .container .nav-item .nav-link.active {
   }
 }
 .portada-projects__fecha {
+  font-size: 0.8rem;
   padding-left: 1rem;
 }
 @media (min-width: 768px) {
@@ -1065,13 +1049,17 @@ header .container .nav-item .nav-link.active {
   }
 }
 .portada-projects__texto {
+  font-size: 0.8rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.8rem;
+  text-align: justify;
 }
 @media (min-width: 768px) {
   .portada-projects__texto {
     font-size: 0.7rem;
+    text-align: center;
     color: white;
     position: absolute;
     top: 85%;

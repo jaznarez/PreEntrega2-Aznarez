@@ -5,25 +5,6 @@ $sombra-titulo: 5px 5px 5px black;
 $sombra-parrafo: 2px 2px 2px black;
 $sombra-tarjetas: 2px 2px 10px;
 
-@mixin mq-mobile {
-    @media(min-width: 480px) {
-        @content
-    }
-}
-
-@mixin mq-tablet {
-    @media(min-width: 768px) {
-        @content
-    }
-}
-
-@mixin mq-desktop {
-    @media(min-width: 1024px) {
-        @content
-    }
-}
-
-
 
 .portada {
     background-image: url(../img/ajedrez2-comp.jpg);
@@ -336,24 +317,6 @@ $sombra-tarjetas: 2px 2px 10px;
         }
     }
 
-    &__fecha {
-        font-size: 0.8rem;
-    }
-
-    &__texto {
-        font-size: 0.8rem;
-        text-align: justify;
-        padding-top: 0.5rem;
-        padding-bottom: 0.8rem;
-
-        @include mq-tablet() {
-            font-size: 0.7rem;
-            text-align: justify;
-            padding-top: 0.5rem;
-            padding-bottom: 0.8rem;
-        }
-    }
-
     &__card{
 
         @include mq-tablet(){
@@ -452,6 +415,7 @@ $sombra-tarjetas: 2px 2px 10px;
     }
 
     &__fecha{
+        font-size: 0.8rem;
         padding-left: 1rem;
 
         @include mq-tablet(){
@@ -469,13 +433,18 @@ $sombra-tarjetas: 2px 2px 10px;
         }
     }
 
+
     &__texto{
+        font-size: 0.8rem;
         padding-left:1rem;
         padding-right: 1rem;
-        text-align: center;
+        padding-top: 0.5rem;
+        padding-bottom: 0.8rem;
+        text-align: justify;
 
         @include mq-tablet(){
             font-size: 0.7rem;
+            text-align: center;
             color: white;
             position: absolute;
             top: 85%;

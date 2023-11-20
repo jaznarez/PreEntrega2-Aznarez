@@ -1,21 +1,4 @@
-@mixin mq-mobile {
-    @media(min-width: 480px) {
-        @content
-    }
-}
 
-
-@mixin mq-tablet {
-    @media(min-width: 768px) {
-        @content
-    }
-}
-
-@mixin mq-desktop {
-    @media(min-width: 1024px) {
-        @content
-    }
-}
 
 $sombra-titulo: 5px 5px 5px black;
 $sombra-parrafo: 2px 2px 2px black;
