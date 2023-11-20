@@ -85,8 +85,9 @@
         
         h3{
             font-size: 1rem;
+            text-align: center;
             margin-bottom:0rem;
-            padding-top: 0.5rem;
+            padding-top: 0.8rem;
             padding-left:1rem;
 
             &:hover{
@@ -96,6 +97,7 @@
 
         p {
             font-size: 0.7rem;
+            text-align: center;
             margin-bottom:0rem;
             padding-left:1rem;
         }  
@@ -170,7 +172,6 @@
 
     p {
         font-size: 0.7rem;
-        text-align: center;
         padding-bottom: 8rem;
         text-shadow: $sombra-parrafo;
         color: white;
@@ -218,13 +219,15 @@
 
         h3{
             font-size: 1rem;
+            text-align: center;
             margin-bottom:0rem;
-            padding-top: 0.5rem;
+            padding-top: 0.8rem;
             padding-left:1rem;
         }
 
         p {
             font-size: 0.7rem;
+            text-align: center;
             margin-bottom:0rem;
             padding-left:1rem;
         }

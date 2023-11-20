@@ -455,8 +455,9 @@ header .container .nav-item .nav-link.active {
 }
 .creaciones-chess__tarjetas h3 {
   font-size: 1rem;
+  text-align: center;
   margin-bottom: 0rem;
-  padding-top: 0.5rem;
+  padding-top: 0.8rem;
   padding-left: 1rem;
 }
 .creaciones-chess__tarjetas h3:hover {
@@ -464,6 +465,7 @@ header .container .nav-item .nav-link.active {
 }
 .creaciones-chess__tarjetas p {
   font-size: 0.7rem;
+  text-align: center;
   margin-bottom: 0rem;
   padding-left: 1rem;
 }
@@ -539,7 +541,6 @@ header .container .nav-item .nav-link.active {
 }
 .creaciones-esculturas p {
   font-size: 0.7rem;
-  text-align: center;
   padding-bottom: 8rem;
   text-shadow: 2px 2px 2px black;
   color: white;
@@ -588,12 +589,14 @@ header .container .nav-item .nav-link.active {
 }
 .creaciones-esculturas__tarjetas h3 {
   font-size: 1rem;
+  text-align: center;
   margin-bottom: 0rem;
-  padding-top: 0.5rem;
+  padding-top: 0.8rem;
   padding-left: 1rem;
 }
 .creaciones-esculturas__tarjetas p {
   font-size: 0.7rem;
+  text-align: center;
   margin-bottom: 0rem;
   padding-left: 1rem;
 }
