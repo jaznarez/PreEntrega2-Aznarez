@@ -917,7 +917,7 @@ header .container .nav-item .nav-link.active {
     transition: 0.8s ease;
   }
   .portada-projects__responsive img:hover {
-    width: 300px;
+    width: 400px;
     opacity: 1;
     filter: contrast(120%);
     transform: scale(1.05);
@@ -933,11 +933,11 @@ header .container .nav-item .nav-link.active {
     transition: 0.8s ease;
     border-radius: 10px;
     padding-bottom: 5rem;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
   }
   .portada-projects__responsive img:hover {
-    width: 300px;
+    width: 500px;
     opacity: 1;
     transform: scale(1.05);
   }
