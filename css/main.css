@@ -134,8 +134,16 @@ header .container .nav-item .nav-link.active {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 3rem;
+    -moz-column-gap: 0rem;
+         column-gap: 0rem;
     align-items: start;
     padding-top: 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-wrapper {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
 
@@ -1007,6 +1015,7 @@ header .container .nav-item .nav-link.active {
   padding-top: 1rem;
   padding-left: 1rem;
   text-align: center;
+  color: black;
 }
 @media (min-width: 768px) {
   .portada-projects__subtitulo {

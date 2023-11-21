@@ -65,7 +65,13 @@
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 3rem;
+        column-gap:0rem;
         align-items: start;
         padding-top: 4rem; 
+    }
+
+    @include mq-desktop(){
+        padding-left:10rem;
+        padding-right:10rem;
     }
 }
