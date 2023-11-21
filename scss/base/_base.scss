@@ -47,4 +47,59 @@ img {
     }
 }
 
+@mixin subtitulo-portada{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    width: 180px;
+    text-align: center;
+    line-height: 2.5rem;
+    text-shadow: $sombra-titulo;
+}
 
+@mixin subtitulo-portada-mobile{
+    font-size: 2.8rem;
+    line-height: 3rem;
+    width: 200px;
+}
+
+@mixin subtitulo-portada-tablet{
+    width: 300px;
+    font-size: 3.5rem;
+    padding-top: 1rem;
+    line-height: 3rem;
+}
+
+@mixin subtitulo-portada-desktop{
+    width: 400px;
+    font-size: 5rem;
+    padding-top: 1rem;
+    line-height: 5.5rem;
+}
+
+@mixin background-titulo-secciones{
+    height: 35vh;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+}
+
+@mixin creations-title-text{
+    font-size: 0.7rem;
+    text-align: center;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;  
+    text-shadow: $sombra-parrafo;
+    color: white;
+}
+
+@mixin titulo-secciones-h2{
+    font-size: 2.2rem;
+    color: white;
+    font-weight: bold;
+    text-align:center;
+    text-shadow: $sombra-titulo;
+}

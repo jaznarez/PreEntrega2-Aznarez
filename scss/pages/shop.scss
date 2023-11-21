@@ -2,11 +2,7 @@
 
 .shop-ready{
     background-image: url(../img/shop8-comp.png);
-    height: 35vh;
-    background-position:center;
-    background-size: cover;
-    opacity: 0.6;
-    display: flex;
+    @include background-titulo-secciones;
     justify-content:flex-start;
     align-items:center;
 
@@ -19,19 +15,13 @@
         line-height: 5rem;
     }
 
-    @include mq-desktop(){
-
-    }
-
     h2{
-        font-size: 2.2rem;
-        color: white;
-        font-weight: bold;
+        @include titulo-secciones-h2;
         text-align:left;
         padding-bottom: 10rem;
         padding-left: 2rem;
         margin-bottom: 0rem;
-        text-shadow: $sombra-titulo;
+        
 
         @include mq-mobile(){
             font-size: 3rem;
@@ -94,7 +84,6 @@
             }
         }
 
-
         @include mq-tablet(){
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -128,18 +117,13 @@
         p{
             font-size: 0.8rem;
         }
-
     }
 }
 
 
 .shop-create{
     background-image: url(../img/startcreating-comp.png);
-    height: 35vh;
-    background-position:center;
-    background-size: cover;
-    opacity: 0.6;
-    display: flex;
+    @include background-titulo-secciones;
     justify-content:flex-start;
     align-items:center;
 
@@ -152,21 +136,13 @@
         line-height: 5rem;
     }
 
-    @include mq-desktop(){
-        
-    }
-
     a{
-        font-size: 2.2rem;
-        color: white;
-        font-weight: bold;
-        text-align:center;
+        @include titulo-secciones-h2;
         line-height: 2.2rem;
         padding-top: 8rem;
         padding-left:5.5rem;
         margin-bottom: 0rem;
-        text-shadow: $sombra-titulo;
-
+        
         &:hover{
             font-size: 5.5rem;
             padding-left:6rem;

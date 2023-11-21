@@ -407,9 +407,9 @@ header .container .nav-item .nav-link.active {
   color: white;
   font-weight: bold;
   text-align: center;
+  text-shadow: 5px 5px 5px black;
   padding-top: 1rem;
   margin-bottom: 0rem;
-  text-shadow: 5px 5px 5px black;
 }
 @media (min-width: 768px) {
   .creaciones-chess h2 {
@@ -420,7 +420,7 @@ header .container .nav-item .nav-link.active {
 .creaciones-chess p {
   font-size: 0.7rem;
   text-align: center;
-  padding-right: 0rem;
+  padding-right: 0.5rem;
   padding-left: 0.5rem;
   text-shadow: 2px 2px 2px black;
   color: white;
@@ -511,7 +511,7 @@ header .container .nav-item .nav-link.active {
   opacity: 0.6;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   margin-top: 2rem;
 }
 @media (min-width: 480px) {
@@ -530,10 +530,10 @@ header .container .nav-item .nav-link.active {
   color: white;
   font-weight: bold;
   text-align: center;
+  text-shadow: 5px 5px 5px black;
   padding-top: 0.5rem;
   padding-bottom: 0rem;
   margin-bottom: 0rem;
-  text-shadow: 5px 5px 5px black;
 }
 @media (min-width: 480px) {
   .creaciones-esculturas h2 {
@@ -549,9 +549,12 @@ header .container .nav-item .nav-link.active {
 }
 .creaciones-esculturas p {
   font-size: 0.7rem;
-  padding-bottom: 8rem;
+  text-align: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   text-shadow: 2px 2px 2px black;
   color: white;
+  padding-bottom: 8rem;
 }
 @media (min-width: 480px) {
   .creaciones-esculturas p {
@@ -1247,6 +1250,8 @@ header .container .nav-item .nav-link.active {
   background-size: cover;
   opacity: 0.6;
   display: flex;
+  justify-content: center;
+  align-items: start;
   justify-content: flex-start;
   align-items: center;
 }
@@ -1265,11 +1270,12 @@ header .container .nav-item .nav-link.active {
   font-size: 2.2rem;
   color: white;
   font-weight: bold;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
   text-align: left;
   padding-bottom: 10rem;
   padding-left: 2rem;
   margin-bottom: 0rem;
-  text-shadow: 5px 5px 5px black;
 }
 @media (min-width: 480px) {
   .shop-ready h2 {
@@ -1371,6 +1377,8 @@ header .container .nav-item .nav-link.active {
   background-size: cover;
   opacity: 0.6;
   display: flex;
+  justify-content: center;
+  align-items: start;
   justify-content: flex-start;
   align-items: center;
 }
@@ -1390,11 +1398,11 @@ header .container .nav-item .nav-link.active {
   color: white;
   font-weight: bold;
   text-align: center;
+  text-shadow: 5px 5px 5px black;
   line-height: 2.2rem;
   padding-top: 8rem;
   padding-left: 5.5rem;
   margin-bottom: 0rem;
-  text-shadow: 5px 5px 5px black;
 }
 .shop-create a:hover {
   font-size: 5.5rem;
