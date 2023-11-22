@@ -967,7 +967,7 @@ header .container .nav-item .nav-link.active {
        object-fit: cover;
     opacity: 0.8;
     transition: 0.8s ease;
-    overflow: hidden;
+    /*overflow: hidden;*/
   }
   .portada-projects__card:hover {
     width: 300px;
@@ -1033,9 +1033,8 @@ header .container .nav-item .nav-link.active {
     width: 180px;
   }
   .portada-projects__subtitulo:hover {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    width: 220px;
   }
 }
 @media (min-width: 1024px) {
@@ -1058,6 +1057,9 @@ header .container .nav-item .nav-link.active {
     top: 68%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  .portada-projects__fecha:hover {
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 1024px) {
