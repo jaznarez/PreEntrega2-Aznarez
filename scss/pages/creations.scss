@@ -29,6 +29,7 @@
 
     p{
         @include creations-title-text;
+        
 
         @include mq-tablet{
             font-size: 1.2rem;
